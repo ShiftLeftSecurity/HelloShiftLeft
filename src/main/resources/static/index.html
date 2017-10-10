@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <style>
+        *
+        {
+            padding:0px;
+            margin:0px;
+            color:green;
+        }
+        body{
+            background-color: white;
+        }
+        #wrapper
+        {
+            margin:100px;
+            padding:20px;
+        }
+        #wrapper form
+        {
+            margin-left:25%;
+            margin-right:25%;
+        }
+        #output
+        {
+            margin-top:20px;
+            border: solid green 2px;
+            height: 200px;
+            overflow: scroll;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="input">
+                <form >
+                    <input type="text" id="searchvalue"/>
+                    <input type="button" value="Go"/>
+                </form>
+            </div>
+            <div id="output"></div>
+        </div>
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("output").innerHTML = this.responseText;
+                    var a = JSON.parse(this.responseText);
+                }
+            };
+            var custno = "customers/"+document.getElementById("searchvalue").value;
+            xhttp.open("GET", custno, true);
+            xhttp.send();
+        }
+        $("input")[0].oninput = function () {
+           loadDoc();
+        };
+    </script>
+    </body>
+</html>
