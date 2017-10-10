@@ -11,7 +11,7 @@ This is a demo application which provides a real world representation of a REST 
  
 ## Run
  ```sh
- $ java -jar target/hello-shiftleft-0.0.1.jar --jasypt.encryptor.password=shiftbyte5
+ $ java -jar target/hello-shiftleft-0.0.1.jar
 ```
 
 ## Exercise Vulnerabilites and Exposures
