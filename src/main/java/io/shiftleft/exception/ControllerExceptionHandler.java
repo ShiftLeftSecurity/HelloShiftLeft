@@ -1,16 +1,20 @@
 package io.shiftleft.exception;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import lombok.extern.slf4j.Slf4j;
+import io.shiftleft.controller.CustomerController;
 
-@Slf4j
+
 @ControllerAdvice
 public class ControllerExceptionHandler {
 
+  private static Logger log = LoggerFactory.getLogger(CustomerController.class);
+  
 	@ResponseStatus(HttpStatus.NOT_FOUND) // 404
 	@ExceptionHandler(CustomerNotFoundException.class)
 	public void handleNotFound(CustomerNotFoundException ex) {

@@ -35,6 +35,8 @@ import org.apache.http.impl.auth.BasicScheme;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.joda.time.DateTime;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -52,18 +54,18 @@ import org.springframework.web.context.request.WebRequest;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 
+import io.shiftleft.data.DataLoader;
 import io.shiftleft.exception.CustomerNotFoundException;
 import io.shiftleft.exception.InvalidCustomerRequestException;
 import io.shiftleft.model.Customer;
 import io.shiftleft.repository.CustomerRepository;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.util.HtmlUtils;
 
 /**
  * Customer Controller exposes a series of RESTful endpoints
  */
-@Slf4j
+
 @Configuration
 @EnableEncryptableProperties
 @PropertySource({ "classpath:config/application-sfdc.properties" })
@@ -75,6 +77,8 @@ public class CustomerController {
 
 	@Autowired
 	Environment env;
+	
+	private static Logger log = LoggerFactory.getLogger(CustomerController.class);
 
 	@PostConstruct
 	public void init() {

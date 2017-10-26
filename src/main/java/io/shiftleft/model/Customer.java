@@ -11,82 +11,157 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-@ToString(callSuper = true, exclude = { "id", "ssn", "tin" })
 @Entity
 public class Customer {
-	public Customer() {
-	}
+  public Customer() {
+  }
 
-	public Customer(String customerId, int clientId, String firstName, String lastName, Date dateOfBirth,
-					String ssn, String socialInsurancenum, String tin, String phoneNumber, Address address,
-					Set<Account> accounts) {
-		super();
-		this.clientId = clientId;
-		this.customerId = customerId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.dateOfBirth = dateOfBirth;
-		this.ssn = ssn;
-		this.socialInsurancenum = socialInsurancenum;
-		this.tin = tin;
-		this.phoneNumber = phoneNumber;
-		this.address = address;
-		this.accounts = accounts;
-	}
+  public Customer(String customerId, int clientId, String firstName, String lastName, Date dateOfBirth, String ssn,
+      String socialInsurancenum, String tin, String phoneNumber, Address address, Set<Account> accounts) {
+    super();
+    this.clientId = clientId;
+    this.customerId = customerId;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dateOfBirth = dateOfBirth;
+    this.ssn = ssn;
+    this.socialInsurancenum = socialInsurancenum;
+    this.tin = tin;
+    this.phoneNumber = phoneNumber;
+    this.address = address;
+    this.accounts = accounts;
+  }
 
-	@Id
-	@Getter
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private long id;
 
-	@Setter
-	@Getter
-	private String customerId;
+  private String customerId;
 
-	@Setter
-	@Getter
-	private int clientId;
+  private int clientId;
 
-	@Setter
-	@Getter
-	private String firstName;
+  private String firstName;
 
-	@Setter
-	@Getter
-	private String lastName;
+  private String lastName;
 
-	@Setter
-	@Getter
-	private Date dateOfBirth;
+  private Date dateOfBirth;
 
-	@Setter
-	@Getter
-	private String ssn;
+  private String ssn;
 
-	@Setter
-	@Getter
-	private String socialInsurancenum;
+  private String socialInsurancenum;
 
-	@Setter
-	@Getter
-	private String tin;
+  private String tin;
 
-	@Setter
-	@Getter
-	private String phoneNumber;
+  private String phoneNumber;
 
-	@Setter
-	@Getter
-	@OneToOne(cascade = { CascadeType.ALL })
-	private Address address;
+  @OneToOne(cascade = { CascadeType.ALL })
+  private Address address;
 
-	@Setter
-	@Getter
-	@OneToMany(cascade = { CascadeType.ALL })
-	private Set<Account> accounts;
+  @OneToMany(cascade = { CascadeType.ALL })
+  private Set<Account> accounts;
+
+  public long getId() {
+    return id;
+  }
+
+  public String getCustomerId() {
+    return customerId;
+  }
+
+  public int getClientId() {
+    return clientId;
+  }
+
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public Date getDateOfBirth() {
+    return dateOfBirth;
+  }
+
+  public String getSsn() {
+    return ssn;
+  }
+
+  public String getSocialInsurancenum() {
+    return socialInsurancenum;
+  }
+
+  public String getTin() {
+    return tin;
+  }
+
+  public String getPhoneNumber() {
+    return phoneNumber;
+  }
+
+  public Address getAddress() {
+    return address;
+  }
+
+  public Set<Account> getAccounts() {
+    return accounts;
+  }
+
+  public void setId(long id) {
+    this.id = id;
+  }
+
+  public void setCustomerId(String customerId) {
+    this.customerId = customerId;
+  }
+
+  public void setClientId(int clientId) {
+    this.clientId = clientId;
+  }
+
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  public void setDateOfBirth(Date dateOfBirth) {
+    this.dateOfBirth = dateOfBirth;
+  }
+
+  public void setSsn(String ssn) {
+    this.ssn = ssn;
+  }
+
+  public void setSocialInsurancenum(String socialInsurancenum) {
+    this.socialInsurancenum = socialInsurancenum;
+  }
+
+  public void setTin(String tin) {
+    this.tin = tin;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+  }
+
+  public void setAddress(Address address) {
+    this.address = address;
+  }
+
+  public void setAccounts(Set<Account> accounts) {
+    this.accounts = accounts;
+  }
+
+  @Override
+  public String toString() {
+    return "Customer [id=" + id + ", customerId=" + customerId + ", clientId=" + clientId + ", firstName=" + firstName
+        + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth + ", ssn=" + ssn + ", socialInsurancenum="
+        + socialInsurancenum + ", tin=" + tin + ", phoneNumber=" + phoneNumber + ", address=" + address + ", accounts="
+        + accounts + "]";
+  }
 
 }

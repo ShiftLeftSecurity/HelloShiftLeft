@@ -1,8 +1,11 @@
 package io.shiftleft.controller;
 
+import io.shiftleft.data.DataLoader;
 import io.shiftleft.model.Patient;
 import io.shiftleft.repository.PatientRepository;
-import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,10 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Admin checks login
  */
-@Slf4j
+
 @RestController
 public class PatientController {
 
+  private static Logger log = LoggerFactory.getLogger(PatientController.class);
 
   @Autowired
   private PatientRepository patientRepository;

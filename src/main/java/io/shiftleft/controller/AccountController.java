@@ -1,11 +1,14 @@
 package io.shiftleft.controller;
 
+import io.shiftleft.data.DataLoader;
 import io.shiftleft.model.Account;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import io.shiftleft.repository.AccountRepository;
-import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,12 +16,14 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Admin checks login
  */
-@Slf4j
+
 @RestController
 public class AccountController {
     @Autowired
     private AccountRepository accountRepository;
 
+    private static Logger log = LoggerFactory.getLogger(DataLoader.class);
+    
     @GetMapping("/account")
     public Iterable<Account> getAccountList(HttpServletResponse response, HttpServletRequest request) {
         response.addHeader("test-header-detection", new Account().toString());
