@@ -1,0 +1,35 @@
+GET    /account                 controllers.AccountController.getAccountList()
+GET    /account/:id             controllers.AccountController.getAccount(id: Long)
+POST   /account                 controllers.AccountController.createAccount()
++ nocsrf
+POST   /bean1599                controllers.AccountController.createBean1599()
+POST   /account/:id/deposit     controllers.AccountController.depositIntoAccount(id: Long)
+POST   /account/:id/withdraw    controllers.AccountController.withdrawFromAccount(id: Long)
+POST   /account/:id/addInterest controllers.AccountController.addInterestToAccount(id: Long)
+
+GET    /                        controllers.CustomerController.index
+GET    /rawcustomers/:id        controllers.CustomerController.getRawCustomer(id: String)
+GET    /rawcustomersbyname/:firstName   controllers.CustomerController.getRawCustomerByName(firstName: String)
+
+GET    /customers/:id           controllers.CustomerController.getCustomer(id: Long)
+PUT    /customers/:id           controllers.CustomerController.updateCustomer(id: Long)
+DELETE /customers/:id           controllers.CustomerController.removeCustomer(id: Long)
+GET    /customers               controllers.CustomerController.getCustomers
+POST   /customers               controllers.CustomerController.createCustomer
+GET    /loadSettings            controllers.CustomerController.loadSettings()
+GET    /saveSettings            controllers.CustomerController.saveSettings()
+GET    /debug                   controllers.CustomerController.debug()
+GET    /debugEscaped            controllers.CustomerController.debugEscaped()
+
+POST   /admin/printSecrets      controllers.AdminController.doPostPrintSecrets
+GET    /admin/printSecrets      controllers.AdminController.doGetPrintSecrets
+POST   /admin/login             controllers.AdminController.doPostLogin
+GET    /admin/login             controllers.AdminController.doGetLogin
+
+GET    /patient                 controllers.PatientController.getPatient
+
+GET    /search/user             controllers.SearchController.doGetSearch
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /robots.txt             controllers.Assets.at(path="/public", file="robots.txt")
+GET     /assets/*file           controllers.Assets.versioned(path="/public", file: Asset)

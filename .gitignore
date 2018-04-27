@@ -1,0 +1,46 @@
+.shiftleft/
+/project/target
+/project/project/target
+/build/
+/bin/
+/config/
+/.classpath
+*.class
+/.project
+/.settings/
+/.g8/
+/logs/
+
+.cache-main
+.cache-tests
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse project files
+.classpath
+.project
+
+# generated files
+bin/
+gen/
+target/
+sootOutput/
+input/
+
+# built application files
+*.apk
+*.ap_
+
+.recommenders/
+conf/evolutions
+
+### Java ###
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear

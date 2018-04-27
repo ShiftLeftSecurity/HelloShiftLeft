@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <style>
+        *
+        {
+            padding:0px;
+            margin:0px;
+            color:green;
+        }
+        body{
+            background-color: white;
+        }
+        #wrapper
+        {
+            margin:100px;
+            padding:20px;
+        }
+        #wrapper form
+        {
+            margin-left:25%;
+            margin-right:25%;
+        }
+        #output
+        {
+            margin-top:20px;
+            border: solid green 2px;
+            height: 200px;
+            overflow: scroll;
+        }
+    </style>
+    <script src="assets/javascripts/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="input">
+                <form >
+                    <input type="text" id="searchvalue"/>
+                    <input type="button" value="Go"/>
+                </form>
+            </div>
+            <div id="output"></div>
+        </div>
+        <script src="assets/javascripts/main.js"></script>
+    </body>
+</html>
