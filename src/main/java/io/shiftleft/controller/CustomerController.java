@@ -340,7 +340,7 @@ public class CustomerController {
 	 * @return created customer
 	 */
 	@RequestMapping(value = { "/customers" }, method = { RequestMethod.POST })
-	public Customer createCustomer(@RequestParam Customer customer, HttpServletResponse httpResponse,
+	public Customer createCustomer(@RequestBody Customer customer, HttpServletResponse httpResponse,
 								   WebRequest request) {
 
 		Customer createdcustomer = null;

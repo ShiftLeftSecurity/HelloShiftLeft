@@ -1,0 +1,8 @@
+.project
+shiftleft.json
+sl_MavenDependenciesTree.txt
+.vscode
+.tempShiftleft
+.settings
+.classpath
+target/

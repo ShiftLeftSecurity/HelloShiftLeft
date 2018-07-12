@@ -31,8 +31,9 @@ public class AccountController {
         return this.accountRepository.findAll();
     }
 
-    @PostMapping("/account")
-    public Account createAccount(Account account) {
+	@PostMapping("/account")
+    public Account createAccount(@RequestBody Account account) {
+        log.info("Account request is : "+ account.toString());
         this.accountRepository.save(account);
         log.info("Account Data is {}", account.toString());
         return account;
