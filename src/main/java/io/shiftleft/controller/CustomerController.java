@@ -45,6 +45,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -339,16 +340,11 @@ public class CustomerController {
 	 *            customer
 	 * @return created customer
 	 */
-	@RequestMapping(value = { "/customers" }, method = { RequestMethod.POST })
-	public Customer createCustomer(@RequestBody Customer customer, HttpServletResponse httpResponse,
-								   WebRequest request) {
+	@PostMapping("/customers")
+	public Customer createCustomer(@RequestBody Customer customer) {
 
 		Customer createdcustomer = null;
 		createdcustomer = customerRepository.save(customer);
-		httpResponse.setStatus(HttpStatus.CREATED.value());
-		httpResponse.setHeader("Location",
-				String.format("%s/customers/%s", request.getContextPath(), customer.getId()));
-
 		return createdcustomer;
 	}
 
