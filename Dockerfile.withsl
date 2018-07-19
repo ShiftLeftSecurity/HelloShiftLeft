@@ -4,10 +4,12 @@ ARG SHIFTLEFT_ORG_ID
 ARG SHIFTLEFT_UPLOAD_TOKEN
 ENV SHIFTLEFT_ORG_ID ${SHIFTLEFT_ORG_ID}
 ENV SHIFTLEFT_UPLOAD_TOKEN ${SHIFTLEFT_UPLOAD_TOKEN}
+ENV GET_LATEST false
 
-RUN apk --update --no-cache add curl openjdk8
+RUN apk --update --no-cache add curl openjdk8 bash
 
-COPY target/hello-shiftleft-${APP_VERSION}.jar hello-shiftleft.jar
+
+RUN curl -LJo hello-shiftleft.jar https://github.com/infracloudio/HelloShiftLeft/releases/download/0.0.1/hello-shiftleft-0.0.1.jar
 
 # Install ShiftLeft CLI
 RUN curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz | tar xvz -C /usr/local/bin
