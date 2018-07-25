@@ -9,7 +9,7 @@ ENV GET_LATEST false
 RUN apk --update --no-cache add curl openjdk8 bash
 
 
-RUN curl -LJo hello-shiftleft.jar https://github.com/infracloudio/HelloShiftLeft/releases/download/0.0.1/hello-shiftleft-0.0.1.jar
+COPY target/hello-shiftleft-${APP_VERSION}.jar hello-shiftleft.jar
 
 # Install ShiftLeft CLI
 RUN curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz | tar xvz -C /usr/local/bin
