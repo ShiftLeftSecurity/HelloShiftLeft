@@ -45,10 +45,15 @@ jobs:
           name: Build the application
           command: mvn clean package
       
-      # run shiftleft security tests!
+      # Analyze for security!
       - run: 
-          name: Analyze code for security bugs
+          name: Analyze for security bugs
           command: sl analyze --wait --app hello-shiftleft target/hello-shiftleft-0.0.1.jar
+          
+      # Prioritize security bugs
+      - run: 
+          name: Prioritize security bugs
+          command: sh uat.sh
       
       # Test Security Results!
       - run: 
