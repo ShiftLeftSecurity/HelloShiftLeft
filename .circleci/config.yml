@@ -52,5 +52,5 @@ jobs:
       
       # Test Security Results!
       - run: 
-          name: Assert build quality against security standards
+          name: Assert build quality against security standards!
           command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/hello-shiftleft/violations" -H "Authorization: Bearer $TOKEN" | grep -o "sensitive-to-http" | wc -l) -le 30 ]]'
