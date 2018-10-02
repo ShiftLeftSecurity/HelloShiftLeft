@@ -1,0 +1,56 @@
+# Java Maven CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-java/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/openjdk:8-jdk
+      
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    environment:
+      # Customize the JVM maximum heap limit
+      MAVEN_OPTS: -Xmx3200m
+    
+    steps:
+      - checkout
+      # Install SL agent
+      - run: 
+          name: Install Shiftleft agent
+          command: curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz > /tmp/sl.tar.gz && sudo tar -C /usr/local/bin -xzf /tmp/sl.tar.gz
+          
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "pom.xml" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: mvn dependency:go-offline
+
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: v1-dependencies-{{ checksum "pom.xml" }}
+      # build the app
+      - run: 
+          name: Build the application
+          command: mvn clean package
+      
+      # run shiftleft security tests!
+      - run: 
+          name: Analyze code for security bugs
+          command: sl analyze --wait --app hello-shiftleft target/hello-shiftleft-0.0.1.jar
+      
+      # Test Security Results!
+      - run: 
+          name: Assert build quality against security standards
+          command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/hello-shiftleft/violations" -H "Authorization: Bearer $TOKEN" | grep -o "sensitive-to-http" | wc -l) -le 30 ]]'
