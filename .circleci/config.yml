@@ -48,7 +48,7 @@ jobs:
       # Analyze for security!
       - run: 
           name: Analyze for security bugs
-          command: sl analyze --wait --app hello-shiftleft-test target/hello-shiftleft-0.0.1.jar
+          command: sl analyze --wait --app hello-shiftleft-ayal target/hello-shiftleft-0.0.1.jar
           
       # Prioritize security bugs
       - run: 
@@ -58,4 +58,4 @@ jobs:
       # Test Security Results!
       - run: 
           name: Assert build quality against security standards
-          command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/hello-shiftleft-test/metrics" -H "authorization: Bearer $TOKEN" -H "content-type: application/json" --data-binary "{\"context\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/hello-shiftleft-test\"},\"queries\":[{\"violationsAll\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/hello-shiftleft-test\"}}]}" | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" | grep -o "sensitive-to-http" | wc -l) -le 20 ]]'
+          command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/hello-shiftleft-test/metrics" -H "authorization: Bearer $TOKEN" -H "content-type: application/json" --data-binary "{\"context\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/hello-shiftleft-ayal\"},\"queries\":[{\"violationsAll\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/hello-shiftleft-ayal\"}}]}" | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" | grep -o "sensitive-to-http" | wc -l) -le 20 ]]'
