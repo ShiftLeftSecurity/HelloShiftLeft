@@ -49,7 +49,7 @@ jobs:
       - run: 
           name: Analyze for security bugs
           command: |
-            set APP_NAME = hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM
+            set APP_NAME=hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM
             echo %APP_NAME%
             sleep 5
             sl analyze --wait --app hello-shiftleft-manish target/hello-shiftleft-0.0.1.jar
