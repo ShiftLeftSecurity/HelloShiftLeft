@@ -48,6 +48,8 @@ jobs:
       # Analyze for security!
       - run: 
           name: Analyze for security bugs
+          command: set $APP_NAME = hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM
+          command: echo $APP_NAME
           command: sl analyze --wait --app hello-shiftleft-manish target/hello-shiftleft-0.0.1.jar
           
       # Prioritize security bugs
