@@ -19,7 +19,6 @@ jobs:
     environment:
       # Customize the JVM maximum heap limit
       MAVEN_OPTS: -Xmx3200m
-      APP_NAME: hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM
     
     steps:
       - checkout
@@ -46,11 +45,15 @@ jobs:
           name: Build the application
           command: mvn clean package
       
+      - run:
+      name: Setup Environment Variables
+      command: |
+        echo 'export APP_NAME="hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM"' >> $BASH_ENV
+      
       # Analyze for security!
       - run: 
           name: Analyze for security bugs
           command: |
-            echo %APP_NAME%
             echo $APP_NAME
             sleep 5
             sl analyze --wait --app hello-shiftleft-manish target/hello-shiftleft-0.0.1.jar
