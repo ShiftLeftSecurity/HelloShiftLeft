@@ -44,11 +44,11 @@ jobs:
       - run: 
           name: Build the application
           command: mvn clean package
-      
+     
+      # Set up Environment Variables
       - run:
-      name: Setup Environment Variables
-      command: |
-        echo 'export APP_NAME="hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM"' >> $BASH_ENV
+          name: Setup Environment Variables
+          command: echo 'export APP_NAME="hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM"' >> $BASH_ENV
       
       # Analyze for security!
       - run: 
