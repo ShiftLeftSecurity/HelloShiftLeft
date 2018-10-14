@@ -48,10 +48,7 @@ jobs:
       # Analyze for security!
       - run: 
           name: Analyze for security bugs
-          command: |
-            echo 'export APP_NAME="hello-shiftleft-circleCI-$CIRCLE_BUILD_NUM"' >> $BASH_ENV
-            sleep 5
-            sl analyze --wait --app $APP_NAME target/hello-shiftleft-0.0.1.jar
+          command: sl analyze --wait --app $APP_NAME target/hello-shiftleft-0.0.1.jar
           
       # Prioritize security bugs
       - run: 
