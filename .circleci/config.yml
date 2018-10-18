@@ -52,7 +52,7 @@ jobs:
             echo 'export APP_NAME=hello-shiftleft-$CIRCLE_BUILD_NUM' >> $BASH_ENV
             source $BASH_ENV
       
-      # Analyze for security
+      # Analyze for security!
       - run: 
           name: Analyze for security bugs
           command: sl analyze --wait --app $APP_NAME target/hello-shiftleft-0.0.1.jar
