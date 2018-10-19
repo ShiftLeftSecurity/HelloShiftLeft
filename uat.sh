@@ -1,4 +1,3 @@
-export SHIFTLEFT_SEC_BLOCK_ATTACKS=$1
 echo "Running with blocking mode: $1"
 sl run -- java -jar target/hello-shiftleft-0.0.1.jar &
 sleep 60
