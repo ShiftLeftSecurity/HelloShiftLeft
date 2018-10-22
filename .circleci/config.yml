@@ -41,7 +41,7 @@ jobs:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
           
-      # build the apps!
+      # build the apps
       - run: 
           name: Build the application
           command: mvn clean package
