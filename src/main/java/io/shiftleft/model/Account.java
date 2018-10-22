@@ -13,6 +13,7 @@ public class Account {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
+    private long SocSecNum;
 
   private String type;
 
