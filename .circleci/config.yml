@@ -90,4 +90,4 @@ jobs:
         name: Run Python Command
         command: |
           cd HelloShiftLeft
-          python create_instance.py --zone us-east1-b --name test-1 affable-cacao-206319 sl-test-bucket
+          python create-deploy-instance.py --zone us-east1-b --name test-1 affable-cacao-206319 sl-test-bucket
