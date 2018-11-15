@@ -62,7 +62,7 @@ jobs:
           name: Prioritize security bugs
           command: sh uat.sh
       
-      # Test Security Results
+      # Test Security Results!
       - run: 
           name: Assert build quality against security standards
           command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/$APP_NAME/metrics" -H "authorization: Bearer $TOKEN" -H "content-type: application/json" --data-binary "{\"context\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"},\"queries\":[{\"violationsAll\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"}}]}" | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" | grep -o "sensitive-to-http" | wc -l) -le 20 ]]'
