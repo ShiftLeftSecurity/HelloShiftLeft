@@ -142,12 +142,8 @@ Instance created.
 It will take a minute or two for the instance to complete work.
 Check this URL: http://storage.googleapis.com/{}/output.png
 Once the image is uploaded press enter to delete the instance.
-""".format(bucket))
-    if wait:
-        input()
-    print('Deleting instance.')
-    operation = delete_instance(compute, project, zone, instance_name)
-    wait_for_operation(compute, project, zone, operation['name'])
+""".format(bucket))    
+    
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description=__doc__,
