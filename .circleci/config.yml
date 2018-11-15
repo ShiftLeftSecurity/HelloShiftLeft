@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  build-job:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
@@ -66,3 +66,12 @@ jobs:
       - run: 
           name: Assert build quality against security standards
           command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/$APP_NAME/metrics" -H "authorization: Bearer $TOKEN" -H "content-type: application/json" --data-binary "{\"context\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"},\"queries\":[{\"violationsAll\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"}}]}" | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" | grep -o "sensitive-to-http" | wc -l) -le 20 ]]'
+
+  deploy:
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - run: |
+          echo $GCLOUD_SERVICE_KEY | base64 --decode | sudo gcloud auth activate-service-account --key-file=-
+          sudo gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+          sudo gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
