@@ -53,41 +53,41 @@ jobs:
             source $BASH_ENV
       
       # Analyze for security!
-     # - run: 
-   #       name: Analyze for security bugs
-    #      command: sl analyze --wait --app $APP_NAME target/hello-shiftleft-0.0.1.jar
+      - run: 
+          name: Analyze for security bugs
+          command: sl analyze --wait --app $APP_NAME target/hello-shiftleft-0.0.1.jar
           
-      # Prioritize security bugs
-      #- run: 
-       #   name: Prioritize security bugs
-        #  command: sh uat.sh
+     #  Prioritize security bugs
+      - run: 
+          name: Prioritize security bugs
+          command: sh uat.sh
       
-      # Test Security Results!
-     # - run: 
-      #    name: Assert build quality against security standards
-       #   command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/$APP_NAME/metrics" -H "authorization: Bearer $TOKEN" -H "content-type: application/json" --data-binary "{\"context\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"},\"queries\":[{\"violationsAll\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"}}]}" | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" | grep -o "sensitive-to-http" | wc -l) -le 20 ]]'
+     #  Test Security Results!
+      - run: 
+          name: Assert build quality against security standards
+          command: '[[ $(curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_ID/projects/$APP_NAME/metrics" -H "authorization: Bearer $TOKEN" -H "content-type: application/json" --data-binary "{\"context\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"},\"queries\":[{\"violationsAll\":{\"projectSpId\":\"sl/$SHIFTLEFT_ORG_ID/$APP_NAME\"}}]}" | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" | grep -o "sensitive-to-http" | wc -l) -le 20 ]]'
 
-  deploy:
-    docker:
-      - image: google/cloud-sdk
-    steps:
+#  deploy:
+ #   docker:
+  #    - image: google/cloud-sdk
+   # steps:
     
       # Set up Google cloud authentication access
-      - run: 
-        name: Set up Google Cloud Auth
-        command: |
-          echo $GCLOUD_SERVICE_KEY | base64 --decode | sudo gcloud auth activate-service-account --key-file=-
-          sudo gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
-          sudo gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
+   #   - run: 
+    #    name: Set up Google Cloud Auth
+     #   command: |
+      #    echo $GCLOUD_SERVICE_KEY | base64 --decode | sudo gcloud auth activate-service-account --key-file=-
+       #   sudo gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+        #  sudo gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
       
       # Download the relevant files
-      - run: 
-        name: Download HelloShiftLeft Code
-        command: git clone https://github.com/alokshukla1978/HelloShiftLeft.git
+    #  - run: 
+     #   name: Download HelloShiftLeft Code
+      #  command: git clone https://github.com/alokshukla1978/HelloShiftLeft.git
       
       # Set up Google cloud authentication access
-      - run: 
-        name: Run Python Command
-        command: |
-          cd HelloShiftLeft
-          python create-deploy-instance.py --zone us-east1-b --name test-1 affable-cacao-206319 sl-test-bucket
+     # - run: 
+      #  name: Run Python Command
+       # command: |
+        #  cd HelloShiftLeft
+         # python create-deploy-instance.py --zone us-east1-b --name test-1 affable-cacao-206319 sl-test-bucket
