@@ -43,7 +43,7 @@ jobs:
           
       # build the apps
       - run: 
-          name: Build the application
+          name: Build the application!
           command: mvn clean package
           
       - run:
