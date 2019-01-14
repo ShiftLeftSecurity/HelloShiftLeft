@@ -57,7 +57,7 @@ jobs:
           name: Analyze for security bugs
           command: sl analyze --wait --app $APP_NAME target/hello-shiftleft-0.0.1.jar
           
-     #  Prioritize security bugs!!
+     #  Prioritize security bugs!
       - run: 
           name: Prioritize security bugs
           command: sh uat.sh
