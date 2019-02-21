@@ -45,11 +45,13 @@ jobs:
       - run: 
           name: Build the application!
           command: mvn clean package
-          
+     
+     # echo 'export APP_NAME=hello-shiftleft-$CIRCLE_BUILD_NUM' >> $BASH_ENV
+
       - run:
           name: Update PATH and Define Environment Variable at Runtime
           command: |
-            echo 'export APP_NAME=hello-shiftleft-$CIRCLE_BUILD_NUM' >> $BASH_ENV
+              echo 'export APP_NAME=hello-shiftleft-AF' >> $BASH_ENV
             source $BASH_ENV
       
       # Analyze for security!
