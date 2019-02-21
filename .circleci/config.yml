@@ -51,7 +51,7 @@ jobs:
       - run:
           name: Update PATH and Define Environment Variable at Runtime
           command: |
-              echo 'export APP_NAME=hello-shiftleft-AF' >> $BASH_ENV
+              echo 'export APP_NAME=hello-shiftleft-AF' >> $BASH_ENV ,
             source $BASH_ENV
       
       # Analyze for security!
