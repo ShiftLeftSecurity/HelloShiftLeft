@@ -31,10 +31,10 @@ public class PatientController {
    */
   @RequestMapping(value = "/patients", method = RequestMethod.GET)
   public Iterable<Patient> getPatient() {
- //   Patient pat = patientRepository.findOne(1l);
-  //  if (pat != null) {
- //     log.info("First Patient is {}", pat.toString());
- //  }
+    Patient pat = patientRepository.findOne(1l);
+    if (pat != null) {
+      log.info("First Patient is {}", pat.toString());
+   }
     return patientRepository.findAll();
   }
 
