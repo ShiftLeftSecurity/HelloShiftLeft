@@ -22,7 +22,7 @@ jobs:
     
     steps:
       - checkout
-      # Install SL agent!!
+      # Install SL agent!
       - run: 
           name: Install Shiftleft agent!
           command: curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz > /tmp/sl.tar.gz && sudo tar -C /usr/local/bin -xzf /tmp/sl.tar.gz
