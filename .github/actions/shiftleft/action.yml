@@ -1,0 +1,5 @@
+name: 'ShiftLeft'
+description: 'ShiftLeft Action'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
