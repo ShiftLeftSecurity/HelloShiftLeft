@@ -23,4 +23,5 @@ jobs:
     - name: Build code
       run: |
         pwd
+        ls
         sh actionanalysis.sh
