@@ -20,6 +20,8 @@ jobs:
         SHIFTLEFT_API_TOKEN: "${{ secrets.SHIFTLEFT_API_TOKEN }}"
     - name: Checkout Code
       uses: actions/checkout@v2.0.0
+    - name: Checkout Code
+      run: mvn clean package 
     - name: Build code
       run: |
         pwd
