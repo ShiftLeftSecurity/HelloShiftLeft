@@ -7,7 +7,7 @@ PULL_REQUEST=$(curl "https://api.github.com/repos/$GITHUB_REPO/pulls?state=open"
 echo "Got pull request $PULL_REQUEST for branch $GITHUB_BRANCH"
 
 # Install ShiftLeft
-sudo curl https://cdn.shiftleft.io/download/sl > sudo /usr/local/bin/sl && sudo chmod a+rx /usr/local/bin/sl
+curl https://cdn.shiftleft.io/download/sl > /usr/local/bin/sl && sudo chmod a+rx /usr/local/bin/sl
 
 curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
   -H "Authorization: Bearer $GITHUB_TOKEN" \
