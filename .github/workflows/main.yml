@@ -20,5 +20,6 @@ jobs:
         SHIFTLEFT_API_TOKEN: "${{ secrets.SHIFTLEFT_API_TOKEN }}"
     - name: Build, Analyze and run
       run: |
+        cd ..
         pwd
         sh actionanalysis.sh
