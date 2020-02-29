@@ -7,7 +7,6 @@ PULL_REQUEST=$(curl "https://api.github.com/repos/$GITHUB_REPO/pulls?state=open"
 echo "Got pull request $PULL_REQUEST for branch $GITHUB_BRANCH"
 
 # Install ShiftLeft
-# curl https://cdn.shiftleft.io/download/sl > /usr/local/bin/sl && sudo chmod a+rx /usr/local/bin/sl
 curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz > /tmp/sl.tar.gz && sudo tar -C /usr/local/bin -xzf /tmp/sl.tar.gz
 
 curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
@@ -15,7 +14,7 @@ curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
   -H "Content-Type: application/json" \
   -d '{"state": "pending", "context": "Code analysis"}'
 
-sl analyze --version-id "$GITHUB_SHA" --tag branch="$GITHUB_BRANCH" --tag app.group="java-app" --app "$GITHUB_PROJECT" --java --cpg --wait --force target/hello-shiftleft-0.0.1.jar
+sl analyze --version-id "$GITHUB_SHA" --tag branch="$GITHUB_BRANCH" --app "$GITHUB_PROJECT" --cpg --wait --force target/hello-shiftleft-0.0.1.jar
 
 curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
   -H "Authorization: Bearer $GITHUB_TOKEN" \
