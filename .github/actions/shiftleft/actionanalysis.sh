@@ -6,27 +6,15 @@ PULL_REQUEST=$(curl "https://api.github.com/repos/$GITHUB_REPO/pulls?state=open"
   -H "Authorization: Bearer $GITHUB_TOKEN" | jq ".[] | select(.head.sha==\"$GITHUB_SHA\") | .number")
 echo "Got pull request $PULL_REQUEST for branch $GITHUB_BRANCH"
 
-mvn clean package
-
 # Install ShiftLeft
-curl https://cdn.shiftleft.io/download/sl > /usr/local/bin/sl && chmod a+rx /usr/local/bin/sl
+curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz > /tmp/sl.tar.gz && sudo tar -C /usr/local/bin -xzf /tmp/sl.tar.gz
+
+sl analyze --version-id "$GITHUB_SHA" --tag branch="$GITHUB_BRANCH" --app "$GITHUB_PROJECT" --cpg --wait --force target/hello-shiftleft-0.0.1.jar
 
 curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
   -H "Authorization: Bearer $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"state": "pending", "context": "Code analysis"}'
-
-sl analyze --version-id "$GITHUB_SHA" --tag branch="$GITHUB_BRANCH" --tag app.group="java-app" --app "$GITHUB_PROJECT" --java --cpg --wait --force target/hello-shiftleft-0.0.1.jar
-
-curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
-  -H "Authorization: Bearer $GITHUB_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"state": "success", "context": "Code analysis"}'
-
-curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/statuses/$GITHUB_SHA" \
-  -H "Authorization: Bearer $GITHUB_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"state": "pending", "context": "Vulnerability analysis"}'
+  -d '{"state": "success", "context": "ShiftLeft Code analysis"}'
 
 VULNS=$(curl -XPOST "https://www.shiftleft.io/api/v3/public/org/$SHIFTLEFT_ORG_ID/app/$GITHUB_PROJECT/vulnerabilities/" \
   -H "Authorization: Bearer $SHIFTLEFT_API_TOKEN" | jq -c -r '[.totalResults,.lowImpactResults,.highImpactResults]')
@@ -46,5 +34,14 @@ curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comm
   -H "Authorization: Bearer $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d "{\"body\": \"$COMMENT\"}"
-
-sl check-analysis --app "$GITHUB_PROJECT" --branch "$GITHUB_BRANCH"
+  
+BUILDRULECHECK=$(sl check-analysis --app "$GITHUB_PROJECT" --branch "$GITHUB_BRANCH")
+if [ -n "$BUILDRULECHECK" ]; then
+    URL="https://www.shiftleft.io/violationlist/$GITHUB_PROJECT?apps=$GITHUB_PROJECT&isApp=1"
+    PR_COMMENT="Your build rule failed, check here for vulnerability list - $URL"  
+    curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comments" \
+      -H "Authorization: Bearer $GITHUB_TOKEN" \
+      -H "Content-Type: application/json" \
+      -d "{\"body\": \"$PR_COMMENT\"}"
+    exit 1
+fi
