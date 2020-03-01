@@ -36,11 +36,13 @@ curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comm
   -d "{\"body\": \"$COMMENT\"}"
   
   URL="https://www.shiftleft.io/violationlist/$GITHUB_PROJECT?apps=$GITHUB_PROJECT&isApp=1"
-  PR_COMMENT="Go here for more vulnerabilities details - $URL"
-  
-  curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comments" \
-  -H "Authorization: Bearer $GITHUB_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d "{\"body\": \"$PR_COMMENT\"}"
+  PR_COMMENT="Your build rule failed, check here for vulnerability list - $URL"  
 
-sl check-analysis --app "$GITHUB_PROJECT" --branch "$GITHUB_BRANCH"
+BUILDRULECHECK=$(sl check-analysis --app "$GITHUB_PROJECT" --branch "$GITHUB_BRANCH")
+if [ $(echo $BUILDRULECHECK | grep "failed build rule") ]; then
+    curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comments" \
+      -H "Authorization: Bearer $GITHUB_TOKEN" \
+      -H "Content-Type: application/json" \
+      -d "{\"body\": \"$PR_COMMENT\"}"
+fi
+
