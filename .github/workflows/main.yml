@@ -18,20 +18,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8      
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        GITHUB_REPO: "${{ github.repository }}"
-        GITHUB_SHA: "${{ github.sha }}"
-        GITHUB_REF: "${{ github.ref }}"
-        SHIFTLEFT_ORG_ID: "${{ secrets.SHIFTLEFT_ORG_ID }}"
-        SHIFTLEFT_ACCESS_TOKEN: "${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}"
-        SHIFTLEFT_API_TOKEN: "${{ secrets.SHIFTLEFT_API_TOKEN }}"
     - name: Checkout Code
       uses: actions/checkout@v2.0.0
-    - name: Checkout Code
+    - name: Build Code
       run: mvn clean package 
-    - name: Build code
-      run: |
-        pwd
-        ls
-        sh actionanalysis.sh
+    - name: Analyze code
+      run: sh actionanalysis.sh
