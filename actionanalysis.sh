@@ -39,7 +39,7 @@ URL="https://www.shiftleft.io/violationlist/$GITHUB_PROJECT?apps=$GITHUB_PROJECT
 PR_COMMENT="Your build rule failed, check here for vulnerability list - $URL"  
 
 BUILDRULECHECK=$(sl check-analysis --app "$GITHUB_PROJECT" --branch "$GITHUB_BRANCH")
-if [ -n $BUILDRULECHECK ]; then
+if [ -n "$BUILDRULECHECK" ]; then
     curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comments" \
       -H "Authorization: Bearer $GITHUB_TOKEN" \
       -H "Content-Type: application/json" \
