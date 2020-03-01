@@ -47,18 +47,8 @@ curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comm
   -H "Authorization: Bearer $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d "{\"body\": \"$COMMENT\"}"
-
-BUILD_RESULT=$(curl -X GET "https://www.shiftleft.io/api/v3/public/org/$SHIFTLEFT_ORG_ID/app/$GITHUB_PROJECT/tag/branch/$GITHUB_BRANCH/build" \ 
-  -H "Authorization: Bearer $SHIFTLEFT_API_TOKEN" \
-  -H 'Accept: */*' -H 'Cache-Control: no-cache' \
-  -H 'Connection: keep-alive' \
-  -H 'Host: www.shiftleft.io' \
-  -H 'accept-encoding: text/plain, deflate' \
-  -H 'cookie: Cookie_3=value' \
-  -s -b Cookie_3=value) 
   
-  URL="https://shiftleft.io/"
-  URL+=$(echo $BUILD_RESULT | jq -r '.errorDetails')
+  URL="https://www.shiftleft.io/api/v3/public/org/$SHIFTLEFT_ORG_ID/app/$GITHUB_PROJECT/vulnerabilities/"
   PR_COMMENT="Go here for more vulnerabilities details - $URL"
   
   curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comments" \
