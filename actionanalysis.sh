@@ -35,7 +35,7 @@ curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comm
   -H "Content-Type: application/json" \
   -d "{\"body\": \"$COMMENT\"}"
   
-  URL="https://www.shiftleft.io/violationlist/$GITHUB_PROJECT?apps=$GITHUB_PROJECT&isApp=1\"
+  URL="https://www.shiftleft.io/violationlist/$GITHUB_PROJECT?apps=$GITHUB_PROJECT&isApp=1"
   PR_COMMENT="Go here for more vulnerabilities details - $URL"
   
   curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comments" \
