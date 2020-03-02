@@ -42,5 +42,7 @@ jobs:
       with:
         # Artifact name
         name: hello-shiftleft-0.0.1.jar
+    - name: Checkout Code
+      uses: actions/checkout@v2.0.0  
     - name: Analyze code
-      run: sh actionanalysis.sh
+      uses: sh actionanalysis.sh
