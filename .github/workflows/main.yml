@@ -13,7 +13,10 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2.0.0
     - name: Build Code
-      run: mvn clean package
+      run:  |
+        mvn clean package
+        mkdir targetJAR
+        cp target/hello-shiftleft-0.0.1.jar targetJAR/hello-shiftleft-0.0.1.jar
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
