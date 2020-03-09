@@ -23,7 +23,7 @@ jobs:
         # Artifact name
         name: hello-shiftleft-0.0.1.jar
         # Directory containing files to upload
-        path: target/
+        path: targetJAR/
   shiftleft-code-analysis:
     runs-on: ubuntu-latest
     needs: build-code
