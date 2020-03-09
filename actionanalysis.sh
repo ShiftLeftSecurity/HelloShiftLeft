@@ -2,8 +2,11 @@
 
 GITHUB_BRANCH=${GITHUB_REF##*/}
 GITHUB_PROJECT=${GITHUB_REPO##*/}
+echo $GITHUB_REPO
+
 PULL_REQUEST=$(curl "https://api.github.com/repos/$GITHUB_REPO/pulls?state=open" \
   -H "Authorization: Bearer $GITHUB_TOKEN" | jq ".[] | select(.head.sha==\"$GITHUB_SHA\") | .number")
+  
 echo "Got pull request $PULL_REQUEST for branch $GITHUB_BRANCH"
 
 # Install ShiftLeft
