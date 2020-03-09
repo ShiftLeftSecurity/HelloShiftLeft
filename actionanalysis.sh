@@ -10,6 +10,9 @@ echo "Got pull request $PULL_REQUEST for branch $GITHUB_BRANCH"
 curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz > /tmp/sl.tar.gz && sudo tar -C /usr/local/bin -xzf /tmp/sl.tar.gz
 
 ls -l
+echo "GITHUB SHA"=$GITHUB_SHA
+echo "GITHUB BRANCH"=$GITHUB_BRANCH
+echo "GITHUB PROJECT"=$GITHUB_PROJECT
 
 # Analyze code!
 sl analyze --version-id "$GITHUB_SHA" --tag branch="$GITHUB_BRANCH" --app "$GITHUB_PROJECT" --cpg --wait --force hello-shiftleft-0.0.1.jar
