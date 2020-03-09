@@ -42,13 +42,13 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Checkout Code
+      uses: actions/checkout@v2.0.0  
     - name: Download artifact
       uses: actions/download-artifact@v1.0.0
       with:
         # Artifact name
         name: hello-shiftleft-0.0.1.jar
-    - name: Checkout Code
-      uses: actions/checkout@v2.0.0  
     - name: Analyze code
       run: |
         ls -l
