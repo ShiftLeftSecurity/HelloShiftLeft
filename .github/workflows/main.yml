@@ -49,6 +49,7 @@ jobs:
       with:
         # Artifact name
         name: hello-shiftleft-0.0.1.jar
+        path: .
     - name: Analyze code
       run: |
         ls -l
