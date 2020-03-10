@@ -10,7 +10,7 @@ PULL_REQUEST=$(curl "https://api.github.com/repos/$GITHUB_REPO/pulls?state=open"
   
 echo "Got pull request $PULL_REQUEST for branch $GITHUB_BRANCH"
 
-# Install ShiftLeft
+# Install ShiftLeft!
 curl https://www.shiftleft.io/download/sl-latest-linux-x64.tar.gz > /tmp/sl.tar.gz && sudo tar -C /usr/local/bin -xzf /tmp/sl.tar.gz
 
 ls -l
