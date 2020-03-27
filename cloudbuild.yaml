@@ -1,0 +1,12 @@
+steps:
+  - name: maven:3-jdk-11
+    entrypoint: mvn
+    args: ['compile']
+  - name: shiftleft/sast-scan
+    entrypoint: /usr/local/src/scan
+    env:
+      - "WORKSPACE=https://github.com/$REPO_NAME/blob/$COMMIT_SHA"
+      - "GITHUB_TOKEN=${_GITHUB_TOKEN}"
+
+substitutions:
+  _GITHUB_TOKEN: foo
