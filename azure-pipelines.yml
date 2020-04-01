@@ -15,13 +15,13 @@ steps:
     publishJUnitResults: false
     goals: 'compile'
 - script: |
-    docker run -e "WORKSPACE=https://github.com/ShiftLeftSecurity/tarpit-java/blob/$(Build.SourceVersion)" \
+    docker run -e "WORKSPACE=https://github.com/ShiftLeftSecurity/HelloShiftLeft/blob/$(Build.SourceVersion)" \
       -e "REPOSITORY_URL=$(Build.Repository.Uri)" \
       -e "COMMIT_SHA=$(Build.SourceVersion)" \
       -e "GITHUB_TOKEN=$(GITHUB_TOKEN)" \
       -e "BRANCH=$(Build.SourceBranch)" \
-      -v $(Build.SourcesDirectory):/app \
-      -v $(Build.ArtifactStagingDirectory):/reports \
+      -v "$(Build.SourcesDirectory):/app:cached" \
+      -v "$(Build.ArtifactStagingDirectory):/reports:cached" \
       shiftleft/sast-scan scan --src /app \
       --out_dir /reports/CodeAnalysisLogs
   displayName: "Perform ShiftLeft scan"

@@ -3,7 +3,7 @@ steps:
     entrypoint: mvn
     args: ['compile']
   - name: shiftleft/sast-scan
-    entrypoint: /usr/local/src/scan
+    entrypoint: scan
     env:
       - "WORKSPACE=https://github.com/$REPO_NAME/blob/$COMMIT_SHA"
       - "GITHUB_TOKEN=${_GITHUB_TOKEN}"
