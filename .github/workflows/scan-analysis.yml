@@ -20,11 +20,10 @@ jobs:
     - name: Perform ShiftLeft Scan
       uses: ShiftLeftSecurity/scan-action@master
       env:
-        WORKSPACE: ""
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         output: reports
     - name: Upload report
       uses: Anthophila/codeql-action/codeql/upload-sarif@master
       with:
-        sarif_file: "${{ github.workspace }}/reports/class-report.sarif"
+        sarif_file: "${{ github.workspace }}/reports/source-report.sarif"
