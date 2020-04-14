@@ -26,4 +26,4 @@ jobs:
     - name: Upload report
       uses: Anthophila/codeql-action/codeql/upload-sarif@master
       with:
-        sarif_file: "${{ github.workspace }}/reports/source-report.sarif"
+        sarif_file: reports
