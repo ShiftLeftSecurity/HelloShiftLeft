@@ -13,4 +13,4 @@ jobs:
     - name: Upload report
       uses: Anthophila/codeql-action/codeql/upload-sarif@master
       with:
-        sarif_file: "testing"
+        sarif_file: "../testing"
