@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - name: Upload report
       uses: Anthophila/codeql-action/codeql/upload-sarif@master
       with:
