@@ -86,7 +86,7 @@
           "commandLine": "-jar /opt/spotbugs/lib/spotbugs.jar -textui -include /usr/local/src/spotbugs/include.xml -exclude /usr/local/src/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpkqe09gqt -sourcepath /app -quiet -medium -xml:withMessages -effort:max -nested:false -output /app/reports/class-report.xml /app",
           "endTimeUtc": "2020-04-09T19:24:05Z",
           "workingDirectory": {
-            "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft"
+            "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft"
           }
         }
       },
@@ -95,7 +95,7 @@
           "executionSuccessful": true,
           "endTimeUtc": "2020-04-09T19:24:05Z",
           "workingDirectory": {
-            "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft"
+            "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft"
           }
         }
       ],
@@ -124,7 +124,7 @@
                   "startLine": 67
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -159,7 +159,7 @@
                   "startLine": 36
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -194,7 +194,7 @@
                   "startLine": 49
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -229,7 +229,7 @@
                   "startLine": 43
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -264,7 +264,7 @@
                   "startLine": 29
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -299,7 +299,7 @@
                   "startLine": 58
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -334,7 +334,7 @@
                   "startLine": 36
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AccountController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -369,7 +369,7 @@
                   "startLine": 36
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AdminController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AdminController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -404,7 +404,7 @@
                   "startLine": 66
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AdminController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AdminController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -439,7 +439,7 @@
                   "startLine": 56
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AppErrorController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AppErrorController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -474,7 +474,7 @@
                   "startLine": 45
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AppErrorController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/AppErrorController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -509,7 +509,7 @@
                   "startLine": 346
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -544,7 +544,7 @@
                   "startLine": 116
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -579,7 +579,7 @@
                   "startLine": 332
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -614,7 +614,7 @@
                   "startLine": 191
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -649,7 +649,7 @@
                   "startLine": 251
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -684,7 +684,7 @@
                   "startLine": 241
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -719,7 +719,7 @@
                   "startLine": 240
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/CustomerController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -754,7 +754,7 @@
                   "startLine": 34
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/PatientController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/PatientController.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -789,7 +789,7 @@
                   "startLine": 25
                 },
                 "artifactLocation": {
-                  "uri": "file:///Users/prabhu/work/ShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/SearchController.java"
+                  "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft/src/main/java/io/shiftleft/controller/SearchController.java"
                 },
                 "contextRegion": {
                   "snippet": {
