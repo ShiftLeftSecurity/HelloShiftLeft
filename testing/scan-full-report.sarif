@@ -88,7 +88,7 @@
             "/usr/local/src/spotbugs/exclude.xml",
             "-noClassOk",
             "-auxclasspathFromFile",
-            "/tmp/tmpdm372f6o",
+            "/tmp/tmp1bzbu8ku",
             "-sourcepath",
             "/app",
             "-quiet",
@@ -101,8 +101,8 @@
             "/app"
           ],
           "executionSuccessful": true,
-          "commandLine": "-jar /opt/spotbugs/lib/spotbugs.jar -textui -include /usr/local/src/spotbugs/include.xml -exclude /usr/local/src/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpdm372f6o -sourcepath /app -quiet -medium -xml:withMessages -effort:max -nested:false -output /app/reports/class-report.xml /app",
-          "endTimeUtc": "2020-04-15T12:29:10Z",
+          "commandLine": "-jar /opt/spotbugs/lib/spotbugs.jar -textui -include /usr/local/src/spotbugs/include.xml -exclude /usr/local/src/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmp1bzbu8ku -sourcepath /app -quiet -medium -xml:withMessages -effort:max -nested:false -output /app/reports/class-report.xml /app",
+          "endTimeUtc": "2020-04-15T12:46:29Z",
           "workingDirectory": {
             "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft"
           }
@@ -111,7 +111,7 @@
       "invocations": [
         {
           "executionSuccessful": true,
-          "endTimeUtc": "2020-04-15T12:29:10Z",
+          "endTimeUtc": "2020-04-15T12:46:29Z",
           "workingDirectory": {
             "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft"
           }
@@ -159,9 +159,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:66"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -197,9 +194,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -235,9 +229,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:48"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -273,9 +264,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:42"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -311,9 +299,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:28"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -349,9 +334,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:57"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -387,9 +369,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
           "ruleId": "CWE-915",
           "ruleIndex": 1
         },
@@ -425,9 +404,6 @@
             "issue_severity": "CRITICAL"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
           "ruleId": "CWE-502",
           "ruleIndex": 2
         },
@@ -463,9 +439,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:65"
-          },
           "ruleId": "CWE-79",
           "ruleIndex": 3
         },
@@ -501,9 +474,6 @@
             "issue_severity": "CRITICAL"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:55"
-          },
           "ruleId": "CWE-352",
           "ruleIndex": 4
         },
@@ -539,9 +509,6 @@
             "issue_severity": "CRITICAL"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44"
-          },
           "ruleId": "CWE-352",
           "ruleIndex": 4
         },
@@ -577,9 +544,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:345"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -615,9 +579,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "07b8ea92607737e76e57fc2e5bf54700f382e46d896484f2581e6e0c4d12eb13:115"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -653,9 +614,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ce8aa1062a7c0088a6fa9b5af4b85b2477a615a527bf5257d869938caadd879c:331"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -691,9 +649,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:190"
-          },
           "ruleId": "CWE-22",
           "ruleIndex": 5
         },
@@ -729,9 +684,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:250"
-          },
           "ruleId": "CWE-22",
           "ruleIndex": 5
         },
@@ -767,9 +719,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:240"
-          },
           "ruleId": "CWE-203",
           "ruleIndex": 6
         },
@@ -805,9 +754,6 @@
             "issue_severity": "CRITICAL"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:239"
-          },
           "ruleId": "CWE-328",
           "ruleIndex": 7
         },
@@ -843,9 +789,6 @@
             "issue_severity": "HIGH"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:33"
-          },
           "ruleId": "CWE-212",
           "ruleIndex": 0
         },
@@ -881,9 +824,6 @@
             "issue_severity": "CRITICAL"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:24"
-          },
           "ruleId": "CWE-94",
           "ruleIndex": 8
         }
@@ -892,13 +832,13 @@
         "description": {
           "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
         },
-        "guid": "502f432e-967f-414e-baeb-f4e62dbc344f"
+        "guid": "fa6c8739-679b-4178-83c6-c71020de6287"
       },
       "versionControlProvenance": [
         {
           "branch": "feature/hello-gh",
           "repositoryUri": "https://github.com/ShiftLeftSecurity/HelloShiftLeft",
-          "revisionId": "d05053dbb8c364b7894e074eaca012ac66be712a"
+          "revisionId": "ac9b463dae1fb1503cd472ef4115f085d0314bbd"
         }
       ]
     },
@@ -944,7 +884,7 @@
           ],
           "executionSuccessful": true,
           "commandLine": "pmd -no-cache --failOnViolation false -language java -version 11 -d /app -r /app/reports/source-report.csv -f csv -R /usr/local/src/rules-pmd.xml",
-          "endTimeUtc": "2020-04-15T12:29:13Z",
+          "endTimeUtc": "2020-04-15T12:46:31Z",
           "workingDirectory": {
             "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft"
           }
@@ -953,7 +893,7 @@
       "invocations": [
         {
           "executionSuccessful": true,
-          "endTimeUtc": "2020-04-15T12:29:13Z",
+          "endTimeUtc": "2020-04-15T12:46:31Z",
           "workingDirectory": {
             "uri": "file:///home/runner/work/HelloShiftLeft/HelloShiftLeft"
           }
@@ -1001,9 +941,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:22"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1039,9 +976,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:29"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1077,9 +1011,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "efa1f375d76194fa51a3556a97e641e61685f914d446979da50a551a4333ffd7:27"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1115,9 +1046,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:51"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1152,9 +1080,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:85"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1190,9 +1115,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:98"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1228,9 +1150,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:25"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1266,9 +1185,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:76"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1304,9 +1220,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:99"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1342,9 +1255,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "19ece7882ce586a7f8799bb1702ad248dfec5534608192f4c8c432a112b48605:75"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1380,9 +1290,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "19ece7882ce586a7f8799bb1702ad248dfec5534608192f4c8c432a112b48605:78"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1417,9 +1324,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "2b4c342f5433ebe591a1da77e013d1b72475562d48578dca8b84bac6651c3cb9:148"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1455,9 +1359,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e740a6faf2db65f5853148d75d9a335d7c4b94ab106fe5f237bc34fdcfc74584:152"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1493,9 +1394,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:165"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1531,9 +1429,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:165"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1568,9 +1463,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:188"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1605,9 +1497,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6c9665042834be8898775683a4c6be5f48ef2251a0ab82e55255ce025ca4c085:192"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1642,9 +1531,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6c9665042834be8898775683a4c6be5f48ef2251a0ab82e55255ce025ca4c085:192"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1679,9 +1565,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:195"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1717,9 +1600,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:230"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1755,9 +1635,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:255"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1793,9 +1670,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:305"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1830,9 +1704,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:345"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1868,9 +1739,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:24"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1905,9 +1773,6 @@
             "issue_severity": "MEDIUM"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:21"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1943,9 +1808,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:34"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -1981,9 +1843,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -2019,9 +1878,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:38"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -2057,9 +1913,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:41"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -2095,9 +1948,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         },
@@ -2133,9 +1983,6 @@
             "issue_severity": "LOW"
           },
           "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:53"
-          },
           "ruleId": "Error Prone",
           "ruleIndex": 0
         }
@@ -2144,2167 +1991,13 @@
         "description": {
           "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
         },
-        "guid": "3b58dd96-a7c3-41e9-ab31-e225374dc4f2"
+        "guid": "a052f985-1d3d-4243-8bb7-30ce1ede7ba3"
       },
       "versionControlProvenance": [
         {
           "branch": "feature/hello-gh",
           "repositoryUri": "https://github.com/ShiftLeftSecurity/HelloShiftLeft",
-          "revisionId": "d05053dbb8c364b7894e074eaca012ac66be712a"
-        }
-      ]
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Class file analyzer",
-          "rules": [
-            {
-              "id": "CWE-212",
-              "name": "Unexpected property leak",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/212.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-915",
-              "name": "Mass assignment",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/915.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-502",
-              "name": "Object deserialization is used in {1}",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/502.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-79",
-              "name": "Potential XSS in Servlet",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/79.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-352",
-              "name": "Spring CSRF unrestricted RequestMapping",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/352.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-22",
-              "name": "Potential Path Traversal (file read)",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/22.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-203",
-              "name": "Unsafe hash equals",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/203.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-328",
-              "name": "MD2, MD4 and MD5 are weak hash functions",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/328.html",
-              "shortDescription": ""
-            },
-            {
-              "id": "CWE-94",
-              "name": "Potential code injection when using Spring Expression",
-              "fullDescription": "",
-              "helpUri": "https://cwe.mitre.org/data/definitions/94.html",
-              "shortDescription": ""
-            }
-          ]
-        }
-      },
-      "conversion": {
-        "tool": {
-          "driver": {
-            "name": "@ShiftLeft/sast-scan"
-          }
-        },
-        "invocation": {
-          "arguments": [
-            "-jar",
-            "/opt/spotbugs/lib/spotbugs.jar",
-            "-textui",
-            "-include",
-            "/usr/local/src/spotbugs/include.xml",
-            "-exclude",
-            "/usr/local/src/spotbugs/exclude.xml",
-            "-noClassOk",
-            "-auxclasspathFromFile",
-            "/tmp/tmp7ylk2li2",
-            "-sourcepath",
-            "/app",
-            "-quiet",
-            "-medium",
-            "-xml:withMessages",
-            "-effort:max",
-            "-nested:false",
-            "-output",
-            "/app/reports/class-report.xml",
-            "/app"
-          ],
-          "executionSuccessful": true,
-          "commandLine": "-jar /opt/spotbugs/lib/spotbugs.jar -textui -include /usr/local/src/spotbugs/include.xml -exclude /usr/local/src/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmp7ylk2li2 -sourcepath /app -quiet -medium -xml:withMessages -effort:max -nested:false -output /app/reports/class-report.xml /app",
-          "endTimeUtc": "2020-04-15T12:26:27Z",
-          "workingDirectory": {
-            "uri": "file:///app"
-          }
-        }
-      },
-      "invocations": [
-        {
-          "executionSuccessful": true,
-          "endTimeUtc": "2020-04-15T12:26:27Z",
-          "workingDirectory": {
-            "uri": "file:///app"
-          }
-        }
-      ],
-      "properties": {
-        "metrics": {
-          "total": 20,
-          "critical": 5,
-          "high": 15,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "results": [
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.addInterestToAccount(double, long) \nAt AccountController.java:[lines 67-71]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        Account account = this.accountRepository.findOne(accountId);\n"
-                  },
-                  "startLine": 67
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Account addInterestToAccount(@RequestParam double amount, @PathVariable long accountId) {\n        Account account = this.accountRepository.findOne(accountId);\n"
-                  },
-                  "endLine": 67,
-                  "startLine": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:66"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.createAccount(Account) \nAt AccountController.java:[lines 36-38]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        this.accountRepository.save(account);\n"
-                  },
-                  "startLine": 36
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Account createAccount(Account account) {\n        this.accountRepository.save(account);\n"
-                  },
-                  "endLine": 36,
-                  "startLine": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.depositIntoAccount(double, long) \nAt AccountController.java:[lines 49-53]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        Account account = this.accountRepository.findOne(accountId);\n"
-                  },
-                  "startLine": 49
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Account depositIntoAccount(@RequestParam double amount, @PathVariable long accountId) {\n        Account account = this.accountRepository.findOne(accountId);\n"
-                  },
-                  "endLine": 49,
-                  "startLine": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:48"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.getAccount(long) \nAt AccountController.java:[lines 43-44]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        log.info(\"Account Data is {}\", this.accountRepository.findOne(1l).toString());\n"
-                  },
-                  "startLine": 43
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Account getAccount(@PathVariable long accountId) {\n        log.info(\"Account Data is {}\", this.accountRepository.findOne(1l).toString());\n"
-                  },
-                  "endLine": 43,
-                  "startLine": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:42"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.getAccountList(HttpServletResponse, HttpServletRequest) \nAt AccountController.java:[lines 29-31]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        response.addHeader(\"test-header-detection\", new Account().toString());\n"
-                  },
-                  "startLine": 29
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Iterable<Account> getAccountList(HttpServletResponse response, HttpServletRequest request) {\n        response.addHeader(\"test-header-detection\", new Account().toString());\n"
-                  },
-                  "endLine": 29,
-                  "startLine": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:28"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.withdrawFromAccount(double, long) \nAt AccountController.java:[lines 58-62]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        Account account = this.accountRepository.findOne(accountId);\n"
-                  },
-                  "startLine": 58
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Account withdrawFromAccount(@RequestParam double amount, @PathVariable long accountId) {\n        Account account = this.accountRepository.findOne(accountId);\n"
-                  },
-                  "endLine": 58,
-                  "startLine": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:57"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "The persistent objects could be exploited by attacker to read sensitive information. \nAt AccountController.java:[lines 21-71] \nIn class io.shiftleft.controller.AccountController \nIn method io.shiftleft.controller.AccountController.createAccount(Account) \nAt AccountController.java:[lines 36-38]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        this.accountRepository.save(account);\n"
-                  },
-                  "startLine": 36
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    public Account createAccount(Account account) {\n        this.accountRepository.save(account);\n"
-                  },
-                  "endLine": 36,
-                  "startLine": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
-          "ruleId": "CWE-915",
-          "ruleIndex": 1
-        },
-        {
-          "message": {
-            "text": "Object deserialization is used in io.shiftleft.controller.AdminController.isAdmin(String) \nAt AdminController.java:[lines 27-135] \nIn class io.shiftleft.controller.AdminController \nIn method io.shiftleft.controller.AdminController.isAdmin(String) \nAt AdminController.java:[line 36]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      Object authToken = objectInputStream.readObject();\n"
-                  },
-                  "startLine": 36
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AdminController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      ObjectInputStream objectInputStream = new ObjectInputStream(bis);\n      Object authToken = objectInputStream.readObject();\n"
-                  },
-                  "endLine": 36,
-                  "startLine": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "CRITICAL"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
-          "ruleId": "CWE-502",
-          "ruleIndex": 2
-        },
-        {
-          "message": {
-            "text": "This use of javax/servlet/ServletOutputStream.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt AdminController.java:[lines 27-135] \nIn class io.shiftleft.controller.AdminController \nIn method io.shiftleft.controller.AdminController.doGetPrintSecrets(String, HttpServletResponse, HttpServletRequest) \nAt AdminController.java:[line 66] \nSink method javax/servlet/ServletOutputStream.println(Ljava/lang/String;)V \nSink parameter 0 \nAt AdminController.java:[line 66]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      response.getOutputStream().println(new String(bdata, StandardCharsets.UTF_8));\n"
-                  },
-                  "startLine": 66
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AdminController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      byte[] bdata = FileCopyUtils.copyToByteArray(cpr.getInputStream());\n      response.getOutputStream().println(new String(bdata, StandardCharsets.UTF_8));\n"
-                  },
-                  "endLine": 66,
-                  "startLine": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:65"
-          },
-          "ruleId": "CWE-79",
-          "ruleIndex": 3
-        },
-        {
-          "message": {
-            "text": "Unrestricted Spring's RequestMapping makes the method vulnerable to CSRF attacks \nAt AppErrorController.java:[lines 34-103] \nIn class io.shiftleft.controller.AppErrorController \nIn method io.shiftleft.controller.AppErrorController.error(HttpServletRequest) \nAt AppErrorController.java:[lines 56-58]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    Map<String, Object> body = getErrorAttributes(request, getTraceParameter(request));\n"
-                  },
-                  "startLine": 56
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AppErrorController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  public ResponseEntity<Map<String, Object>> error(HttpServletRequest request) {\n    Map<String, Object> body = getErrorAttributes(request, getTraceParameter(request));\n"
-                  },
-                  "endLine": 56,
-                  "startLine": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "CRITICAL"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:55"
-          },
-          "ruleId": "CWE-352",
-          "ruleIndex": 4
-        },
-        {
-          "message": {
-            "text": "Unrestricted Spring's RequestMapping makes the method vulnerable to CSRF attacks \nAt AppErrorController.java:[lines 34-103] \nIn class io.shiftleft.controller.AppErrorController \nIn method io.shiftleft.controller.AppErrorController.errorHtml(HttpServletRequest) \nAt AppErrorController.java:[line 45]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    return new ModelAndView(\"/errors/error\", getErrorAttributes(request, false));\n"
-                  },
-                  "startLine": 45
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AppErrorController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  public ModelAndView errorHtml(HttpServletRequest request) {\n    return new ModelAndView(\"/errors/error\", getErrorAttributes(request, false));\n"
-                  },
-                  "endLine": 45,
-                  "startLine": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "CRITICAL"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44"
-          },
-          "ruleId": "CWE-352",
-          "ruleIndex": 4
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.createCustomer(Customer, HttpServletResponse, WebRequest) \nAt CustomerController.java:[lines 346-352]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t\tCustomer createdcustomer = null;\n"
-                  },
-                  "startLine": 346
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\n\t\tCustomer createdcustomer = null;\n"
-                  },
-                  "endLine": 346,
-                  "startLine": 345
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:345"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.getCustomer(Long) \nAt CustomerController.java:[lines 116-136]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      if (null == customerId) {\n"
-                  },
-                  "startLine": 116
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t\t/* validate customer Id parameter */\n      if (null == customerId) {\n"
-                  },
-                  "endLine": 116,
-                  "startLine": 115
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "07b8ea92607737e76e57fc2e5bf54700f382e46d896484f2581e6e0c4d12eb13:115"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.getCustomers() \nAt CustomerController.java:[line 332]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t\treturn (List<Customer>) customerRepository.findAll();\n"
-                  },
-                  "startLine": 332
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\tpublic List<Customer> getCustomers() {\n\t\treturn (List<Customer>) customerRepository.findAll();\n"
-                  },
-                  "endLine": 332,
-                  "startLine": 331
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ce8aa1062a7c0088a6fa9b5af4b85b2477a615a527bf5257d869938caadd879c:331"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.loadSettings(HttpServletResponse, WebRequest) \nAt CustomerController.java:[line 191] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/springframework/core/io/ClassPathResource.getPath()Ljava/lang/String;."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    \tFile folder = new File(cpr.getPath());\n"
-                  },
-                  "startLine": 191
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    \tClassPathResource cpr = new ClassPathResource(\"static\");\n    \tFile folder = new File(cpr.getPath());\n"
-                  },
-                  "endLine": 191,
-                  "startLine": 190
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:190"
-          },
-          "ruleId": "CWE-22",
-          "ruleIndex": 5
-        },
-        {
-          "message": {
-            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.saveSettings(HttpServletResponse, WebRequest) \nAt CustomerController.java:[line 251] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/springframework/core/io/ClassPathResource.getPath()Ljava/lang/String; \nAt CustomerController.java:[line 248] \nAt CustomerController.java:[line 251]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t  File file = new File(cpr.getPath()+settings[0]);\n"
-                  },
-                  "startLine": 251
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    ClassPathResource cpr = new ClassPathResource(\"./static/\");\n\t  File file = new File(cpr.getPath()+settings[0]);\n"
-                  },
-                  "endLine": 251,
-                  "startLine": 250
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:250"
-          },
-          "ruleId": "CWE-22",
-          "ruleIndex": 5
-        },
-        {
-          "message": {
-            "text": "Unsafe comparison of hash that are susceptible to timing attack \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.saveSettings(HttpServletResponse, WebRequest) \nAt CustomerController.java:[line 241] \nSink method java/lang/String.equals(Ljava/lang/Object;)Z \nSink parameter 0 \nUnknown source org/apache/commons/codec/digest/DigestUtils.md5Hex(Ljava/lang/String;)Ljava/lang/String;."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\tif(!cookieMD5sum.equals(calcMD5Sum))\n"
-                  },
-                  "startLine": 241
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    String calcMD5Sum = DigestUtils.md5Hex(base64txt);\n\tif(!cookieMD5sum.equals(calcMD5Sum))\n"
-                  },
-                  "endLine": 241,
-                  "startLine": 240
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:240"
-          },
-          "ruleId": "CWE-203",
-          "ruleIndex": 6
-        },
-        {
-          "message": {
-            "text": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt CustomerController.java:[lines 73-388] \nIn class io.shiftleft.controller.CustomerController \nIn method io.shiftleft.controller.CustomerController.saveSettings(HttpServletResponse, WebRequest) \nAt CustomerController.java:[line 240] \nValue MD5."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    String calcMD5Sum = DigestUtils.md5Hex(base64txt);\n"
-                  },
-                  "startLine": 240
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    String cookieMD5sum = cookie[1];\n    String calcMD5Sum = DigestUtils.md5Hex(base64txt);\n"
-                  },
-                  "endLine": 240,
-                  "startLine": 239
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "CRITICAL"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:239"
-          },
-          "ruleId": "CWE-328",
-          "ruleIndex": 7
-        },
-        {
-          "message": {
-            "text": "Unexpected property could be leaked because a persistence class is directly exposed to the client \nAt PatientController.java:[lines 20-38] \nIn class io.shiftleft.controller.PatientController \nIn method io.shiftleft.controller.PatientController.getPatient() \nAt PatientController.java:[lines 34-38]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    Patient pat = patientRepository.findOne(1l);\n"
-                  },
-                  "startLine": 34
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/PatientController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  public Iterable<Patient> getPatient() {\n    Patient pat = patientRepository.findOne(1l);\n"
-                  },
-                  "endLine": 34,
-                  "startLine": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "HIGH"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:33"
-          },
-          "ruleId": "CWE-212",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "This use of org/springframework/expression/ExpressionParser.parseExpression(Ljava/lang/String;)Lorg/springframework/expression/Expression; could be vulnerable to code injection (Spring Expression) \nAt SearchController.java:[lines 18-30] \nIn class io.shiftleft.controller.SearchController \nIn method io.shiftleft.controller.SearchController.doGetSearch(String, HttpServletResponse, HttpServletRequest) \nAt SearchController.java:[line 25] \nSink method org/springframework/expression/ExpressionParser.parseExpression(Ljava/lang/String;)Lorg/springframework/expression/Expression; \nSink parameter 0 \nTainted source io/shiftleft/controller/SearchController.doGetSearch(Ljava/lang/String;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String; parameter 2."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      Expression exp = parser.parseExpression(foo);\n"
-                  },
-                  "startLine": 25
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/SearchController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      ExpressionParser parser = new SpelExpressionParser();\n      Expression exp = parser.parseExpression(foo);\n"
-                  },
-                  "endLine": 25,
-                  "startLine": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "CRITICAL"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:24"
-          },
-          "ruleId": "CWE-94",
-          "ruleIndex": 8
-        }
-      ],
-      "automationDetails": {
-        "description": {
-          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
-        },
-        "guid": "c137d5e4-b8d5-4121-a9ab-0ba28ac76a3f"
-      },
-      "versionControlProvenance": [
-        {
-          "branch": "feature/hello-gh",
-          "repositoryUri": "https://github.com/ShiftLeftSecurity/HelloShiftLeft",
-          "revisionId": "d05053dbb8c364b7894e074eaca012ac66be712a"
-        }
-      ]
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Source code analyzer",
-          "rules": [
-            {
-              "id": "Error Prone",
-              "name": "BeanMembersShouldSerialize",
-              "fullDescription": "",
-              "helpUri": "https://stackoverflow.com/search?q=shiftleft/sast-scan+source+Error Prone+BeanMembersShouldSerialize",
-              "shortDescription": ""
-            }
-          ]
-        }
-      },
-      "conversion": {
-        "tool": {
-          "driver": {
-            "name": "@ShiftLeft/sast-scan"
-          }
-        },
-        "invocation": {
-          "arguments": [
-            "pmd",
-            "-no-cache",
-            "--failOnViolation",
-            "false",
-            "-language",
-            "java",
-            "-version",
-            "11",
-            "-d",
-            "/app",
-            "-r",
-            "/app/reports/source-report.csv",
-            "-f",
-            "csv",
-            "-R",
-            "/usr/local/src/rules-pmd.xml"
-          ],
-          "executionSuccessful": true,
-          "commandLine": "pmd -no-cache --failOnViolation false -language java -version 11 -d /app -r /app/reports/source-report.csv -f csv -R /usr/local/src/rules-pmd.xml",
-          "endTimeUtc": "2020-04-15T12:26:30Z",
-          "workingDirectory": {
-            "uri": "file:///app"
-          }
-        }
-      },
-      "invocations": [
-        {
-          "executionSuccessful": true,
-          "endTimeUtc": "2020-04-15T12:26:30Z",
-          "workingDirectory": {
-            "uri": "file:///app"
-          }
-        }
-      ],
-      "properties": {
-        "metrics": {
-          "total": 31,
-          "critical": 0,
-          "high": 0,
-          "medium": 8,
-          "low": 23
-        }
-      },
-      "results": [
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    private AccountRepository accountRepository;\n"
-                  },
-                  "startLine": 23
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    @Autowired\n    private AccountRepository accountRepository;\n"
-                  },
-                  "endLine": 23,
-                  "startLine": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:22"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "The String literal 'Account Data is {}' appears 6 times in this file; the first occurrence is on line 30."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        log.info(\"Account Data is {}\", this.accountRepository.findOne(1l).toString());\n"
-                  },
-                  "startLine": 30
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AccountController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "        response.addHeader(\"test-header-detection\", new Account().toString());\n        log.info(\"Account Data is {}\", this.accountRepository.findOne(1l).toString());\n"
-                  },
-                  "endLine": 30,
-                  "startLine": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:29"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  private String fail = \"redirect:/\";\n"
-                  },
-                  "startLine": 28
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AdminController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "public class AdminController {\n  private String fail = \"redirect:/\";\n"
-                  },
-                  "endLine": 28,
-                  "startLine": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "efa1f375d76194fa51a3556a97e641e61685f914d446979da50a551a4333ffd7:27"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "The String literal 'auth' appears 7 times in this file; the first occurrence is on line 52."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  public String doGetPrintSecrets(@CookieValue(value = \"auth\", defaultValue = \"notset\") String auth, HttpServletResponse response, HttpServletRequest request) throws Exception {\n"
-                  },
-                  "startLine": 52
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AdminController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  @RequestMapping(value = \"/admin/printSecrets\", method = RequestMethod.GET)\n  public String doGetPrintSecrets(@CookieValue(value = \"auth\", defaultValue = \"notset\") String auth, HttpServletResponse response, HttpServletRequest request) throws Exception {\n"
-                  },
-                  "endLine": 52,
-                  "startLine": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:51"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DU'-anomaly for variable 'succ' (lines '86'-'125')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    String succ = \"redirect:/admin/printSecrets\";\n"
-                  },
-                  "startLine": 86
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AdminController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  public String doPostLogin(@CookieValue(value = \"auth\", defaultValue = \"notset\") String auth, @RequestBody String password, HttpServletResponse response, HttpServletRequest request) throws Exception {\n    String succ = \"redirect:/admin/printSecrets\";\n"
-                  },
-                  "endLine": 86,
-                  "startLine": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:85"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Avoid using Literals in Conditional Statements."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      if(pass.length!=2) {\n"
-                  },
-                  "startLine": 99
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AdminController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      String[] pass = password.split(\"=\");\n      if(pass.length!=2) {\n"
-                  },
-                  "endLine": 99,
-                  "startLine": 98
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:98"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  private ErrorAttributes errorAttributes;\n"
-                  },
-                  "startLine": 26
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AppErrorController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "   */\n  private ErrorAttributes errorAttributes;\n"
-                  },
-                  "endLine": 26,
-                  "startLine": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:25"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "When doing a String.toLowerCase()/toUpperCase() call, use a Locale."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    return !\"false\".equals(parameter.toLowerCase());\n"
-                  },
-                  "startLine": 77
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AppErrorController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    }\n    return !\"false\".equals(parameter.toLowerCase());\n"
-                  },
-                  "endLine": 77,
-                  "startLine": 76
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:76"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Avoid empty catch blocks."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      catch (Exception ex) {\n"
-                  },
-                  "startLine": 100
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/AppErrorController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      }\n      catch (Exception ex) {\n"
-                  },
-                  "endLine": 100,
-                  "startLine": 99
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:99"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\tprivate CustomerRepository customerRepository;\n"
-                  },
-                  "startLine": 76
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t@Autowired\n\tprivate CustomerRepository customerRepository;\n"
-                  },
-                  "endLine": 76,
-                  "startLine": 75
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "19ece7882ce586a7f8799bb1702ad248dfec5534608192f4c8c432a112b48605:75"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\tEnvironment env;\n"
-                  },
-                  "startLine": 79
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t@Autowired\n\tEnvironment env;\n"
-                  },
-                  "endLine": 79,
-                  "startLine": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "19ece7882ce586a7f8799bb1702ad248dfec5534608192f4c8c432a112b48605:78"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DD'-anomaly for variable 'ret' (lines '149'-'152')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t  \tString ret = \"\";\n"
-                  },
-                  "startLine": 149
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t  \tClassPathResource cpr = new ClassPathResource(\"static/index.html\");\n\t  \tString ret = \"\";\n"
-                  },
-                  "endLine": 149,
-                  "startLine": 148
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "2b4c342f5433ebe591a1da77e013d1b72475562d48578dca8b84bac6651c3cb9:148"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Avoid empty catch blocks."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t\t  } catch (IOException e) {\n"
-                  },
-                  "startLine": 153
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t\t\t  ret= new String(bdata, StandardCharsets.UTF_8);\n\t\t  } catch (IOException e) {\n"
-                  },
-                  "endLine": 153,
-                  "startLine": 152
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e740a6faf2db65f5853148d75d9a335d7c4b94ab106fe5f237bc34fdcfc74584:152"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "The String literal 'Cookie' appears 4 times in this file; the first occurrence is on line 166."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t\t\treturn request.getHeader(\"Cookie\").startsWith(\"settings=\");\n"
-                  },
-                  "startLine": 166
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      \ttry {\n\t\t\treturn request.getHeader(\"Cookie\").startsWith(\"settings=\");\n"
-                  },
-                  "endLine": 166,
-                  "startLine": 165
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:165"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "The String literal 'settings=' appears 4 times in this file; the first occurrence is on line 166."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t\t\treturn request.getHeader(\"Cookie\").startsWith(\"settings=\");\n"
-                  },
-                  "startLine": 166
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      \ttry {\n\t\t\treturn request.getHeader(\"Cookie\").startsWith(\"settings=\");\n"
-                  },
-                  "endLine": 166,
-                  "startLine": 165
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:165"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DU'-anomaly for variable 'md5sum' (lines '189'-'209')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        String md5sum = request.getHeader(\"Cookie\").substring(\"settings=\".length(), 41);\n"
-                  },
-                  "startLine": 189
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "        }\n        String md5sum = request.getHeader(\"Cookie\").substring(\"settings=\".length(), 41);\n"
-                  },
-                  "endLine": 189,
-                  "startLine": 188
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:188"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DD'-anomaly for variable 'filecontent' (lines '193'-'196')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        String filecontent = new String();\n"
-                  },
-                  "startLine": 193
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t\tFile[] listOfFiles = folder.listFiles();\n        String filecontent = new String();\n"
-                  },
-                  "endLine": 193,
-                  "startLine": 192
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6c9665042834be8898775683a4c6be5f48ef2251a0ab82e55255ce025ca4c085:192"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DU'-anomaly for variable 'filecontent' (lines '193'-'209')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "        String filecontent = new String();\n"
-                  },
-                  "startLine": 193
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\t\tFile[] listOfFiles = folder.listFiles();\n        String filecontent = new String();\n"
-                  },
-                  "endLine": 193,
-                  "startLine": 192
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6c9665042834be8898775683a4c6be5f48ef2251a0ab82e55255ce025ca4c085:192"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DD'-anomaly for variable 'filecontent' (lines '196'-'198')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "          filecontent = new String();\n"
-                  },
-                  "startLine": 196
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "          // not efficient, i know\n          filecontent = new String();\n"
-                  },
-                  "endLine": 196,
-                  "startLine": 195
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:195"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Avoid using Literals in Conditional Statements."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\tif(cookie.length<2) {\n"
-                  },
-                  "startLine": 231
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    String[] cookie = settingsCookie.split(\",\");\n\tif(cookie.length<2) {\n"
-                  },
-                  "endLine": 231,
-                  "startLine": 230
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:230"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Ensure that resources like this FileOutputStream object are closed after use."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    FileOutputStream fos = new FileOutputStream(file, true);\n"
-                  },
-                  "startLine": 256
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\n    FileOutputStream fos = new FileOutputStream(file, true);\n"
-                  },
-                  "endLine": 256,
-                  "startLine": 255
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:255"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "When doing a String.toLowerCase()/toUpperCase() call, use a Locale."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    return customer1.toString().toLowerCase().replace(\"script\",\"\");\n"
-                  },
-                  "startLine": 306
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\n    return customer1.toString().toLowerCase().replace(\"script\",\"\");\n"
-                  },
-                  "endLine": 306,
-                  "startLine": 305
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:305"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DD'-anomaly for variable 'createdcustomer' (lines '346'-'347')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "\t\tCustomer createdcustomer = null;\n"
-                  },
-                  "startLine": 346
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/CustomerController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "\n\t\tCustomer createdcustomer = null;\n"
-                  },
-                  "endLine": 346,
-                  "startLine": 345
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:345"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  private PatientRepository patientRepository;\n"
-                  },
-                  "startLine": 25
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/PatientController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  @Autowired\n  private PatientRepository patientRepository;\n"
-                  },
-                  "endLine": 25,
-                  "startLine": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:24"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found 'DD'-anomaly for variable 'message' (lines '22'-'26')."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    java.lang.Object message = new Object();\n"
-                  },
-                  "startLine": 22
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/controller/SearchController.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  public String doGetSearch(@RequestParam String foo, HttpServletResponse response, HttpServletRequest request) {\n    java.lang.Object message = new Object();\n"
-                  },
-                  "endLine": 22,
-                  "startLine": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "MEDIUM"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:21"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Ensure that resources like this BufferedWriter object are closed after use."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "      BufferedWriter bw = new BufferedWriter(new FileWriter(temp));\n"
-                  },
-                  "startLine": 35
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/data/DataBuilder.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "      // write it\n      BufferedWriter bw = new BufferedWriter(new FileWriter(temp));\n"
-                  },
-                  "endLine": 35,
-                  "startLine": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:34"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  private DataBuilder dataBuilder;\n"
-                  },
-                  "startLine": 36
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/data/DataLoader.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  @Autowired\n  private DataBuilder dataBuilder;\n"
-                  },
-                  "endLine": 36,
-                  "startLine": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:35"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  Environment env;\n"
-                  },
-                  "startLine": 39
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/data/DataLoader.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  @Autowired\n  Environment env;\n"
-                  },
-                  "endLine": 39,
-                  "startLine": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:38"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  private CustomerRepository customerRepository;\n"
-                  },
-                  "startLine": 42
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/data/DataLoader.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  @Autowired\n  private CustomerRepository customerRepository;\n"
-                  },
-                  "endLine": 42,
-                  "startLine": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:41"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "Found non-transient, non-static member. Please mark as transient or provide accessors."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "  private PatientRepository patientRepository;\n"
-                  },
-                  "startLine": 45
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/data/DataLoader.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "  @Autowired\n  private PatientRepository patientRepository;\n"
-                  },
-                  "endLine": 45,
-                  "startLine": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        },
-        {
-          "message": {
-            "text": "In J2EE, getClassLoader() might not work as expected.  Use Thread.currentThread().getContextClassLoader() instead."
-          },
-          "level": "note",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": "    props.load(this.getClass().getClassLoader().getResourceAsStream(\"config/application-mysql.properties\"));\n"
-                  },
-                  "startLine": 54
-                },
-                "artifactLocation": {
-                  "uri": "file:///app/src/main/java/io/shiftleft/data/DataLoader.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": "    Properties props = new EncryptableProperties(encryptor);\n    props.load(this.getClass().getClassLoader().getResourceAsStream(\"config/application-mysql.properties\"));\n"
-                  },
-                  "endLine": 54,
-                  "startLine": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "LOW",
-            "issue_severity": "LOW"
-          },
-          "hostedViewerUri": "https://sarifviewer.azurewebsites.net",
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:53"
-          },
-          "ruleId": "Error Prone",
-          "ruleIndex": 0
-        }
-      ],
-      "automationDetails": {
-        "description": {
-          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
-        },
-        "guid": "c5089e63-1347-4082-a55f-0a2b3295f9be"
-      },
-      "versionControlProvenance": [
-        {
-          "branch": "feature/hello-gh",
-          "repositoryUri": "https://github.com/ShiftLeftSecurity/HelloShiftLeft",
-          "revisionId": "d05053dbb8c364b7894e074eaca012ac66be712a"
+          "revisionId": "ac9b463dae1fb1503cd472ef4115f085d0314bbd"
         }
       ]
     }
@@ -4313,8 +2006,8 @@
   "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "inlineExternalProperties": [
     {
-      "guid": "881023eb-da4b-45ce-b953-e27393e8ee7d",
-      "runGuid": "b21dbf33-71ca-4758-8e20-7ab5e538de90"
+      "guid": "11401526-4506-4576-b170-7f7a6cbb55f7",
+      "runGuid": "015fa916-8332-4a86-a06f-c64020dbe59b"
     }
   ]
 }
