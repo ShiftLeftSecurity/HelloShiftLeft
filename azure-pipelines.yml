@@ -19,6 +19,7 @@ steps:
       -e "REPOSITORY_URL=$(Build.Repository.Uri)" \
       -e "COMMIT_SHA=$(Build.SourceVersion)" \
       -e "GITHUB_TOKEN=$(GITHUB_TOKEN)" \
+      -e "SHIFTLEFT_APP=HelloShiftLeft"
       -e "SHIFTLEFT_ORG_ID=$(SHIFTLEFT_ORG_ID)" \
       -e "SHIFTLEFT_ORG_TOKEN=$(SHIFTLEFT_ORG_TOKEN)" \
       -e "SHIFTLEFT_ACCESS_TOKEN=$(SHIFTLEFT_ACCESS_TOKEN)" \
