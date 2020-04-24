@@ -13,20 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Set up JDK 1.11
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.11
-    - name: Build with Maven
-      run: mvn compile org.cyclonedx:cyclonedx-maven-plugin:makeAggregateBom
     - name: Perform ShiftLeft Scan
-      uses: ShiftLeftSecurity/scan-action@master
-      env:
-        WORKSPACE: https://github.com/${{ github.repository }}/blob/${{ github.sha }}
-        VULNDB_HOME: ${{ github.workspace }}/db
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ShiftLeftSecurity/scan-action@feature/auto-build
       with:
         output: reports
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SCAN_AUTO_BUILD: true
     - name: Upload scan reports
       uses: actions/upload-artifact@v1.0.0
       with:
