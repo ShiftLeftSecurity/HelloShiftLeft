@@ -22,8 +22,8 @@ jobs:
     - name: Perform ShiftLeft Scan
       uses: ShiftLeftSecurity/scan-action@master
       env:
+        SCAN_DEBUG_MODE: debug
         WORKSPACE: https://github.com/${{ github.repository }}/blob/${{ github.sha }}
-        VULNDB_HOME: ${{ github.workspace }}/db
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         output: reports
