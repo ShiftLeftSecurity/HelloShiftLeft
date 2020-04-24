@@ -13,7 +13,7 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
-    goals: 'compile package'
+    goals: 'compile'
 - script: |
     docker run -e "WORKSPACE=https://github.com/ShiftLeftSecurity/HelloShiftLeft/blob/$(Build.SourceVersion)" \
       -e "REPOSITORY_URL=$(Build.Repository.Uri)" \
