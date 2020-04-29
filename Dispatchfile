@@ -1,0 +1,12 @@
+#!mesosphere/dispatch-starlark:v0.5
+# vi:syntax=python
+
+load("github.com/mesosphere/dispatch-catalog/starlark/stable/pipeline@master", "git_resource", "pull_request")
+load("github.com/mesosphere/dispatch-catalog/starlark/experimental/shiftleft@tga/add-shiftleft-fn", "sast_scan")
+
+git = git_resource("helloworld-git")
+
+sast_scan("sastscan-check", git)
+
+action(tasks=["sastscan-check"], on=pullRequest())
+action(tasks=["sastscan-check"], on=pullRequest(chatops=["build"]))
