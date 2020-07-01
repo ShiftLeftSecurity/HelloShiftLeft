@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Downloading ShiftLeft Agent!"
+echo "Downloading ShiftLeft Agent!!"
