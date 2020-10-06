@@ -51,6 +51,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.validation.annotation.Validated;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 
@@ -70,6 +71,7 @@ import org.springframework.web.util.HtmlUtils;
 @EnableEncryptableProperties
 @PropertySource({ "classpath:config/application-sfdc.properties" })
 @RestController
+@Validated
 public class CustomerController {
 
 	@Autowired
@@ -77,7 +79,7 @@ public class CustomerController {
 
 	@Autowired
 	Environment env;
-	
+
 	private static Logger log = LoggerFactory.getLogger(CustomerController.class);
 
 	@PostConstruct
@@ -284,7 +286,7 @@ public class CustomerController {
                       @RequestParam String lastName,
                       @RequestParam String dateOfBirth,
                       @RequestParam String ssn,
-					  @RequestParam String socialSecurityNum,
+					            @RequestParam String socialSecurityNum,
                       @RequestParam String tin,
                       @RequestParam String phoneNumber,
                       HttpServletResponse httpResponse,
