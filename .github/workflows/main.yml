@@ -20,6 +20,8 @@ jobs:
     # We are building this application with Java 11
     - name: Setup Java JDK
       uses: actions/setup-java@v1.4.3
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       with:
         java-version: 11.0.x
     - name: Package with maven
@@ -30,6 +32,8 @@ jobs:
     # ShiftLeft requires Java 1.8. Post the package step override the version
     - name: Setup Java JDK
       uses: actions/setup-java@v1.4.3
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       with:
         java-version: 1.8
     - name: NextGen Static Analysis
