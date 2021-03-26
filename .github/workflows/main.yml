@@ -39,6 +39,6 @@ jobs:
     - name: NextGen Static Analysis
      run: |
         ${GITHUB_WORKSPACE}/sl analyze --wait --app HelloShiftLeft --java --cpg target/hello-shiftleft-0.0.1.jar
-      env:
+     env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
