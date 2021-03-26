@@ -1,27 +1,24 @@
 # This workflow integrates ShiftLeft NG SAST with GitHub
 # Visit https://docs.shiftleft.io for help
-name: ShiftLeft
-
+name: NG SAST Scan - ShiftLeft
 on:
-  pull_request:
-  workflow_dispatch:
+  # Trigger the workflow on push to update the baseline scan
+  # or pull request going to main
   push:
-  # We recommend triggering a scan when merging to your default branch as a best practice,
-  # especially if you'd like to compare the results of two scans (e.g., a feature branch against the
-  # default branch)
     branches:
       - main
-      - master
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  NG-SAST-Build:
+  NextGen-Static-Analysis:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     # We are building this application with Java 11
     - name: Setup Java JDK
       uses: actions/setup-java@v1.4.3
-      env:
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       with:
         java-version: 11.0.x
     - name: Package with maven
@@ -32,15 +29,32 @@ jobs:
     # ShiftLeft requires Java 1.8. Post the package step override the version
     - name: Setup Java JDK
       uses: actions/setup-java@v1.4.3
-      env:
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       with:
         java-version: 1.8
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
     - name: NextGen Static Analysis
-      run: |
-           ${GITHUB_WORKSPACE}/sl analyze --wait --app HelloShiftLeft --java --cpg target/hello-shiftleft-0.0.1.jar
-           ${GITHUB_WORKSPACE}/sl check-analysis --app HelloShiftLeft --source 'tag.branch=main' --target scan.30 --report --github-pr-number=${{ github.event.number }} --github-pr-user=${{ github.repository_owner }} --github-pr-repo=${{ github.event.repository.name }} --github-token=${{ secrets.GITHUB_TOKEN }}
-           
+      # Run the analyzer and wait for it to finis, the app is a part of a group and we can dynamicaly capture the branch we're on for tagging. It's a java app and we point to where the binary can be found                        
+      run: ${GITHUB_WORKSPACE}/sl analyze --wait --app HelloShiftLeft --tag app.group=HSL --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --java --cpg target/hello-shiftleft-*.jar
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SHIFTLEFT_ORG_ID: ${{ secrets.SHIFTLEFT_ORG_ID }}
+    - name: Validate Build Rules
+      # Only run on pull request and compare to Main as set in the build rules file Shiftleft.yml
+      if: ${{ github.event_name == 'pull_request' }}
+      # Lets check the previous analysis for this branch to our baseline on Main, 
+      # since we specify a 'branch' we don't have to specify a '--source'
+      run: | 
+            ${GITHUB_WORKSPACE}/sl check-analysis --app shiftleft-java-demo \
+            --branch "${{ github.head_ref || steps.extract_branch.outputs.branch }}" \
+            --report \
+            --github-pr-number=${{ github.event.number }} \
+            --github-pr-user=${{ github.repository_owner }} \
+            --github-pr-repo=${{ github.event.repository.name }} \
+            --github-token=${{ secrets.GITHUB_TOKEN }}
+      env:
+      # For SL to run you'll need a Secret with an access token
+        SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
+   
