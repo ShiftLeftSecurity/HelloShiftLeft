@@ -1,0 +1,40 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    goals: 'compile'
+- script: |
+    docker run -e "WORKSPACE=https://github.com/ShiftLeftSecurity/HelloShiftLeft/blob/$(Build.SourceVersion)" \
+      -e "REPOSITORY_URL=$(Build.Repository.Uri)" \
+      -e "COMMIT_SHA=$(Build.SourceVersion)" \
+      -e "GITHUB_TOKEN=$(GITHUB_TOKEN)" \
+      -e "SHIFTLEFT_APP=HelloShiftLeft" \
+      -e "SHIFTLEFT_ORG_ID=$(SHIFTLEFT_ORG_ID)" \
+      -e "SHIFTLEFT_ORG_TOKEN=$(SHIFTLEFT_ORG_TOKEN)" \
+      -e "SHIFTLEFT_ACCESS_TOKEN=$(SHIFTLEFT_ACCESS_TOKEN)" \
+      -e "BRANCH=$(Build.SourceBranch)" \
+      -v "$(Build.SourcesDirectory):/app:cached" \
+      -v "$(Build.ArtifactStagingDirectory):/reports:cached" \
+      shiftleft/sast-scan scan --src /app \
+      --out_dir /reports/CodeAnalysisLogs
+  displayName: "Perform ShiftLeft scan"
+  continueOnError: "true"
+# To integrate with the ShiftLeft Scan Extension it is necessary to publish the CodeAnalysisLogs folder
+# as an artifact with the same name
+- task: PublishBuildArtifacts@1
+  displayName: "Publish analysis logs"
+  inputs:
+    PathtoPublish: "$(Build.ArtifactStagingDirectory)/CodeAnalysisLogs"
+    ArtifactName: "CodeAnalysisLogs"
+    publishLocation: "Container"
