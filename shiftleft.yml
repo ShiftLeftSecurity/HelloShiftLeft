@@ -1,0 +1,4 @@
+build_rules:
+    - id: High severity
+      severity:
+        - SEVERITY_HIGH_IMPACT
