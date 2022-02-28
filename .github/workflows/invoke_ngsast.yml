@@ -1,5 +1,6 @@
 # This workflow integrates ShiftLeft NG SAST with GitHub
 # Visit https://docs.shiftleft.io for help
+# Adding a comment here to make a change
 name: ShiftLeft
 
 on:
