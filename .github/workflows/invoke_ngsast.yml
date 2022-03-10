@@ -34,7 +34,7 @@ jobs:
       with:
         java-version: 1.8
     - name: NextGen Static Analysis
-      run: ${GITHUB_WORKSPACE}/sl analyze --wait --app sl-java-test --tag branch={{`${{ github.head_ref }}`}} --vcs-prefix-correction "io/shiftleft=src/main/java/" --java --cpg target/hello-shiftleft-0.0.1.jar
+      run: ${GITHUB_WORKSPACE}/sl analyze --wait --app sl-java-test --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --vcs-prefix-correction "io/shiftleft=src/main/java/" --java --cpg target/hello-shiftleft-0.0.1.jar
 
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
