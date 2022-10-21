@@ -47,7 +47,7 @@ jobs:
       # Lets check the previous analysis for this branch to our baseline on Main, 
       # since we specify a 'branch' we don't have to specify a '--source'
       run: | 
-            ${GITHUB_WORKSPACE}/sl check-analysis --app shiftleft-java-demo \
+            ${GITHUB_WORKSPACE}/sl check-analysis --v2 --app shiftleft-java-demo \
             --branch "${{ github.head_ref || steps.extract_branch.outputs.branch }}" \
             --report \
             --github-pr-number=${{ github.event.number }} \
