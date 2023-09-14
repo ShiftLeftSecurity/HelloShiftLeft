@@ -1,0 +1,38 @@
+---
+# This workflow integrates ShiftLeft NG SAST with GitHub
+# Visit https://docs.shiftleft.io for help
+name: ShiftLeft
+
+on:
+  push:
+    branches: 
+      - main
+      - master
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  NextGen-Static-Analyis:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # We are building this application with Java 11
+    - name: Setup Java JDK
+      uses: actions/setup-java@v1.4.3
+      with:
+        java-version: 11.0.x
+    - name: Build and package with Maven
+      run: mvn clean package -DskipTests
+    - name: Download ShiftLeft CLI
+      run: |
+        curl https://cdn.shiftleft.io/download/sl > ${GITHUB_WORKSPACE}/sl && chmod a+rx ${GITHUB_WORKSPACE}/sl
+    # ShiftLeft requires Java 1.8. Post the package step override the version
+    - name: Setup Java JDK
+      uses: actions/setup-java@v1.4.3
+      with:
+        java-version: 1.8
+    - name: NextGen Static Analysis
+      run: ${GITHUB_WORKSPACE}/sl analyze --app HelloShiftLeft-test --vcs-prefix-correction "*=/src/main/java" --java ./target/HelloShiftLeft-1.0.0.jar
+      env:
+        SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
+    
