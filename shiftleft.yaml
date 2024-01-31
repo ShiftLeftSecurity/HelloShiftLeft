@@ -1,0 +1,110 @@
+build_rules:
+  - id: "No critical or high SAST findings"
+    finding_types:
+      - vuln
+    cvss_31_severity_ratings:
+      - critical
+      - high
+    threshold: 0
+    - id: "No secrets"
+    finding_types:
+      - secret
+    threshold: 0  
+    options:
+      num_findings: 10 # Return 10 sast findings
+  - id: "No reachable SCA findings"
+    finding_types:
+      - oss_vuln
+    cvss_31_severity_ratings:
+      - critical
+      - high
+    threshold: 0
+    options:
+      reachable: true
+      num_findings: 10 # Return 10 reachable sca findings
+  - id: "No critical or high container findings"
+    finding_types:
+      - container
+    cvss_31_severity_ratings:
+      - critical
+      - high
+    threshold: 0
+    options:
+      num_findings: 10 # Return 10 container findings
+# The above rule is perhaps the most common in that it
+# is designed to be used with Pull Request and to block
+# new vulns from being introduced that aren't already on
+# the 'main' branch
+#
+# Below is enchalada with all the options shown
+#
+# ID is the name that will be reflected in the PR comments
+#  - id: build-rule-enchalada
+#      - vuln
+#.     - oss_vuln
+#      - secret
+#      - insight
+#      - container
+# Do you want to block ALL types by severity?
+#    cvss_31_severity_ratings:
+#      - critical
+#      - high
+#      - medium
+#.     - low
+# Do you want to focus on just one or more types?
+#    type:
+#      - Weak Random
+#      - Sensitive Data Leak
+#      - Deserialization
+#      - Directory Traversal
+#      - Sensitive Data Exposure
+#      - Remote Code Execution
+#      - Command Injection
+#      - Security Best Practices
+#      - Unsafe Reflection
+#      - Regex Injection
+#      - SQL Injection
+#      - XML External Entities
+#      - Template Injection
+#      - Cross-Site Scripting
+#      - JSON Injection
+#      - Potential SQL Injection
+#      - Potential Regex Injection
+#      - Header Injection
+#      - Security Misconfiguration
+#      - Deprecated Function Use
+#      - Mail Injection
+#      - Race Condition
+#      - Sensitive Data Usage
+#      - Open Redirect
+#      - Error Handling
+#      - HTTP to Database
+#      - HTTP to Model
+#      - LDAP Injection
+#      - Denial of Service
+#      - CRLF Injection
+#      - NoSQL Injection
+#      - Weak Hash
+#      - Session Injection
+#      - Server-Side Request Forgery
+#      - Prototype Pollution
+#      - Log Forging
+#      - XPath Injection
+#      - Insecure Authentication
+#      - Intent Redirection
+#      - Authentication Bypass
+#      - Weak Cipher
+#      - Crypto
+# Focus by OWASP Category?
+#    owasp_category:
+#      - a01-2021-broken-access-control
+#      - a02-2021-cryptographic-failures
+#      - a03-2021-injection
+#      - a04-2021-insecure-design
+#      - a05-2021-security-misconfiguration
+#      - a06-2021-vulnerable-and-outdated-components
+#      - a07-2021-identification-and-authentication-failures
+#      - a08-2021-software-and-data-integrity-failures
+#      - a09-2021-security-logging-and-monitoring-failures
+#      - a10-2021-server-side-request-forgery-(ssrf)
+      
